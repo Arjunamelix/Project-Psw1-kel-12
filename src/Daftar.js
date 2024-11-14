@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate , } from "react-router-dom";
+import {FaEye, FaEyeSlash} from "react-icons/fa";
 
 const Daftar =() => {
     const [username, setUsername] = useState('');
@@ -13,35 +14,7 @@ const Daftar =() => {
     const [province, setProvince] = useState('');
     const [date, setDate] = useState('');
     const navigate = useNavigate();
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
-    };
-
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value);
-    };
-
-    const handleSchoolnameChange = (event) => {
-        setSchoolname(event.target.value);
-    };
-
-    const handleSchooladdressChange = (event) => {
-        setSchooladdress(event.target.value);
-    };
-
-    const handleDistrictChange = (event) => {
-        setDistrict(event.target.value);
-    };
-
-    const handleProvinceChange = (event) => {
-        setProvince(event.target.value);
-    };
-
-    const handleDateChange = (event) => {
-        setDate(event.target.value);
-    };
-
-
+    
     const handleTogglePasswordVisibility = () => setShowPassword (!showPassword);
 
     const handleSubmit = (event) => {
@@ -66,121 +39,222 @@ const Daftar =() => {
     return (
         <div
         style={{
-            backgroundImage:`url('background.jpg')`,
-            backgroundSize:"cover",
-            backgroundPosition:"center",
-            backgroundRepeat:"no-repeat",
-            minHeight:"100vh",
             display:"flex",
             justifyContent:"center",
             alignItems:"center",
-            padding:"20px",
-        }}
-            >
-        <div className="container mt-5"
-            style={{
-                backgroundColor:"rgba(0, 51, 102, 0.9)",
-                padding:"30px",
-                borderRadius:"8px",
-                boxShadow:"0px 4px 8px rgba(0, 0, 0, 0.1)",
-                maxWidth:"500px",
+            minHeight:"100vh",
+            backgroundColor:"#f7f9fc",
+            padding:"20px"
+        }}>
+        <div style={{
+                display:"flex",
+                flexDirection:"row",
+                backgroundColor:"#ffffff",
+                borderRadius:"10px",
+                boxShadow:"0 4px 12px rgba(0, 0, 0, 0.1)",
+                maxWidth:"900px",
                 width:"100%",
-                borderColor:"#ccc",
+                overflow:"hidden"
             }} >
-                
-            <h2 className="text-center">Registration Form</h2>
-            <form onSubmit={handleSubmit} className="mt-4"
-            style={{
+               <div style={{
                 backgroundColor:"#003366",
-                color:"white",
-                padding:"20px",
-                borderRadius:"8px"
-            }}
-            >
-                <div className="mb-3">
-                    <label htmlFor="username" className="form-label">Username:</label>
+                color:"#ffffff",
+                padding:"40px",
+                display:"flex",
+                flexDirection:"column",
+                justifyContent:"center",
+                width:"50%"
+               }}>
+
+            <h2 style={{
+                fontSize:"28px",
+                fontWeight:"bold",
+                marginBottom:"20px",
+            }}> Registration Form </h2>
+
+            <p style={{
+                fontSize:"16px",
+                lineHeight:"1.6",
+                marginBottom:"20px",
+            }}>
+                Buruan Join
+            </p>
+
+            <div style={{
+                display:"flex",
+                justifyContent:"center",
+            }}>
+                <img src=""
+                style={{
+                    borderRadius:"8px",
+                    width:"80%",
+                }} />
+                </div>
+            </div>
+
+            <div style={{
+                padding:"40px",
+                width:"50%"
+            }}>
+            
+            <h3 style={{
+                color:"#003366",
+                fontWeight:"600",
+                marginBottom:"20px",
+                fontSize:"24px",
+                textAlign:"center"
+            }}>Daftar Sini</h3>
+
+            <form onSubmit={handleSubmit} style={{
+                display:"grid",
+                gap:"15px"
+            }}>
                     <input
                     type="text"
-                    id="username"
-                    className="form-control"
+                    placeholder="username"
                     value={username}
-                    onChange={handleUsernameChange}
-                    required
-                    />
-                </div>
-                <div className="mb-3">
-                <label htmlFor="password" className="form-label">Password:</label>
-                <div className="input-group">
+                    onChange={(e) => setUsername(e.target.value)}
+                    required 
+                    style={{
+                        padding:"10px",
+                        fontSize:"14px",
+                        borderRadius:"5px",
+                        border:"1px solid #ddd",
+                        width:"100%"
+                    }}
+                />
+                
+                <div style={{
+                    position:"relative"
+                }}>
                     <input
                     type={showPassword ? "text" : "password"}
-                    id="password"
-                    className="form-control"
+                    placeholder="password"
                     value={password}
-                    onChange={handlePasswordChange}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
+                    style={{
+                        padding:"10px",
+                        fontSize:"14px",
+                        borderRadius:"5px",
+                        border:"1 px solid #ddd",
+                        width:"100%"
+                    }}
                     />
                     
-                    </div>
-                    </div>
-                <div className="mb-3">
-                <label htmlFor="schoolname" className="form-label">School Name:</label>
+                    {/* <span onClick={handleTogglePasswordVisibility} style={{
+                        position:"absolute",
+                        right:"10px",
+                        top:"50%",
+                        transform:"translateY(-50%)",
+                        cursor:"pointer",
+                        color:"#888"
+                    }}>
+                        {showPassword ? <FaEyeSlash/> : <FaEye />}
+                    </span> */}
+                </div>
+                    
                 <input
                 type="text"
-                id="schoolname"
-                className="form-control"
+                placeholder="schoolname"
                 value={schoolname}
-                onChange={handleSchoolnameChange}
+                onChange={(e)  => setSchoolname(e.target.value)}
                 required
+                style={{
+                    padding:"10px",
+                    fontSize:"14px",
+                    borderRadius:"5px",
+                    border:"1px solid #ddd",
+                    width:"100%"
+                }}
                 />
-                </div>
-
-                <div className="mb-3">
-                <label htmlFor="schooladdress" className="form-label">School Address:</label>
+                
                 <input
                 type="text"
-                id="schooladdress"
-                className="form-control"
+                placeholder="schooladdress"
                 value={schooladdress}
-                onChange={handleSchooladdressChange}
+                onChange={(e) => setSchooladdress(e.target.value)}
                 required
+                style={{
+                    padding:"10px",
+                    fontSize:"14px",
+                    borderRadius:"5px",
+                    border:"1px solid #ddd",
+                    width:"100%"
+                }}
                 />
-                </div>
-                <div className="mb-3">
-                <label htmlFor="district" className="form-label">District:</label>
+
                 <input
                 type="text"
-                id="district"
-                className="form-control"
+                placeholder="district"
                 value={district}
-                onChange={handleDistrictChange}
+                onChange={(e) => setDistrict(e.target.value)}
                 required
+                style={{
+                    padding:"10px",
+                    fontSize:"14px",
+                    borderRadius:"5px",
+                    border:"1px solid #ddd",
+                    width:"100%"
+                }}
                 />
-                </div>
-                <div className="mb-3">
-                <label htmlFor="province" className="form-label">Province:</label>
+
                 <input
                 type="text"
-                id="province"
-                className="form-control"
+                placeholder="province"
                 value={province}
-                onChange={handleProvinceChange}
+                onChange={(e) => setProvince(e.target.value)}
                 required
+                style={{
+                    padding:"10px",
+                    fontSize:"14px",
+                    borderRadius:"5px",
+                    border:"1px solid #ddd",
+                    width:"100%"
+                }}
                 />
-                </div>
-                <div className="mb-3">
-                <label htmlFor="date" className="form-label">Date Of Birth:</label>
+
                 <input
                 type="date"
-                id="date"
-                className="form-control"
+                placeholder="date"
                 value={date}
-                onChange={handleDateChange}
+                onChange={(e) => setDate(e.target.value)}
                 required
+                style={{
+                    padding:"10px",
+                    fontSize:"14px",
+                    borderRadius:"5px",
+                    border:"1px solid #ddd",
+                    width:"100%"
+                }}
                 />
-                </div>
-                <button type="submit" className="btn btn-primary">Register</button>
+
+                <button type="submit"
+                    style={{
+                        marginTop:"20px",
+                        padding:"10px",
+                        fontSize:"16px",
+                        borderRadius:"5px",
+                        border:"none",
+                        width:"100%",
+                        backgroundColor:"#4A90E2",
+                        color:"#ffffff",
+                        cursor:"pointer",
+                        transition:"background-color 0.3s ease"
+                    }}
+                >Register</button>
             </form>
-            {message && <div className="alert alert-success mt-3"><p>{message}</p></div>}
+            {message && <div style={{
+                marginTop:"20px",
+                padding:"10px",
+                borderRadius:"5px",
+                backgroundColor:"#DFF0D8",
+                color:"#3C763D",
+                textAlign:"center"
+            }}>
+                {message}
+        </div>}
+        </div>
         </div>
         </div>
     );
