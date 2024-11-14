@@ -6,12 +6,13 @@ const Section1 = () => {
     return (
         <section
             style={{
-                background: `url('path_to_your_fisika_image.jpg') no-repeat center center/cover`,
+                background: `url('') no-repeat center center/cover`,
                 padding: "100px 0",
                 textAlign: "center",
                 color: "#fff",
                 backgroundSize: "cover",
                 height: "100vh",
+                backgroundColor: "#f0a500",
             }}
         >
             <Container>
@@ -37,7 +38,7 @@ const Section1 = () => {
                                 }}
                             />
                             <Button
-                                variant="primary"
+                                // variant="primary"
                                 size="lg"
                                 style={{
                                     padding: "15px 20px",
@@ -46,6 +47,7 @@ const Section1 = () => {
                                     display: "flex",
                                     alignItems: "center",
                                     justifyContent: "center",
+                                    backgroundColor: "#1a2d55",
                                 }}
                             >
                                 <FaSearch style={{ marginRight: "10px" }} />
@@ -54,6 +56,23 @@ const Section1 = () => {
                         </Form>
                     </Col>
                 </Row>
+                <div className="text-center mb-4">
+                <p
+                    className="intro-text mb-4"
+                    style={{
+                        padding: "20px",
+                        borderRadius: "8px",
+                        fontFamily: "'Roboto', sans-serif",
+                        fontSize: "1.3rem",
+                        lineHeight: "1.6",
+                        color: "#333",
+                        opacity: "0",
+                        transition: "opacity 1.5s ease-in-out"
+                    }}
+                >
+                    Selamat datang di platform pembelajaran Fisika Kelas 11! Jelajahi berbagai materi yang menarik dan menantang.
+                </p>
+            </div>
             </Container>
         </section>
     );

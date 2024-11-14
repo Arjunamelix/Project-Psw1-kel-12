@@ -1,41 +1,147 @@
-import React from 'react';
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { useNavigate, useLocation } from "react-router-dom";
+import React, { useState } from 'react';
 
-const NavbarComponent = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
+const Navbar = () => {
+    const [showTentangKami, setShowTentangKami] = useState(false);
+    const [showAkademik, setShowAkademik] = useState(false);
 
-    const activeStyle = { backgroundColor: "#343a40", color: "white"};
-    const defaultStyle = { color: "#000" };
-
-    const handleLogout = () => {
-        navigate("/login")
+    const styles = {
+        header: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '1rem 2rem',
+            backgroundColor: '#1a2d55',
+        },
+        logoContainer: {
+            flex: 1,
+        },
+        logoText: {
+            fontSize: '2rem',
+            color: '#fff',
+            fontWeight: 'bold',
+        },
+        navbar: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '1rem 0',
+        },
+        navbarMenu: {
+            listStyleType: 'none',
+            display: 'flex',
+            gap: '1.5rem',
+            margin: 0,
+            padding: 0,
+        },
+        navbarMenuItem: {
+            position: 'relative',
+        },
+        navbarLink: {
+            color: '#fff',
+            textDecoration: 'none',
+            padding: '0.5rem 1rem',
+            fontWeight: 'bold',
+        },
+        navbarLinkHover: {
+            color: '#f0a500',
+        },
+        dropdownMenu: {
+            position: 'absolute',
+            top: '100%',
+            left: 0,
+            backgroundColor: '#f0a500',
+            listStyleType: 'none',
+            minWidth: '150px',
+            padding: '0.5rem 0',
+            display: 'none',
+            borderRadius: '5px',
+            boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
+            zIndex: 1,
+        },
+        dropdownMenuItem: {
+            width: '100%',
+        },
+        dropdownMenuLink: {
+            display: 'block',
+            color: '#1a2d55',
+            padding: '0.5rem 1rem',
+            textDecoration: 'none',
+            textAlign: 'left',
+        },
+        dropdownMenuLinkHover: {
+            backgroundColor: '#1a2d55',
+            color: '#f0a500',
+        },
+        showDropdown: {
+            display: 'block',
+        },
+        accountIcon: {
+            width: '40px',
+            height: '40px',
+            borderRadius: '50%',
+            backgroundColor: '#f0a500',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            overflow: 'hidden',
+            cursor: 'pointer',
+        },
+        '@media (maxWidth: 768px)': {
+            navbarMenu: {
+                flexDirection: 'column',
+            },
+            dropdownMenu: {
+                position: 'static',
+            },
+        },
     };
 
     return (
-        <Navbar expand="lg" className="d-flex justify-content-center" style={{ width: "100%" }}>
-            <Container className="d-flex justify-content-center">
-                <Navbar.Toggle aria-controls="navbar-nav" />
-                <Navbar.Collapse id="navbar-nav" className="w-100">
-                    <Nav className="d-flex justify-content-center w-100">
-                        <Nav.Link onClick={() => navigate('/Home')} style={location.pathname === "/Home" ? activeStyle : defaultStyle}>
-                            Home
-                        </Nav.Link>
-                        <Nav.Link onClick={() => navigate('/About')} style={location.pathname === "/About" ? activeStyle : defaultStyle}>
-                            Tentang
-                        </Nav.Link>
-                        <Nav.Link onClick={() => navigate('/Contact')} style={location.pathname === "/Contact" ? activeStyle : defaultStyle}>
-                            Curhat
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-                <Button variant="danger" onClick={handleLogout} className="ms-auto" style={{ fontSize: "15px", whiteSpace: "nowrap" }}>
-                    Log Out
-                </Button>
-            </Container>
-        </Navbar>
+        <header style={styles.header}>
+            <div style={styles.logoContainer}>
+                <span style={styles.logoText}>FISIKA</span>
+            </div>
+            <nav style={styles.navbar}>
+                <ul style={styles.navbarMenu}>
+                    <li style={styles.navbarMenuItem}><a href="#" style={styles.navbarLink}>Beranda</a></li>
+
+                    <li
+                        style={styles.navbarMenuItem}
+                        onMouseEnter={() => setShowTentangKami(true)}
+                        onMouseLeave={() => setShowTentangKami(false)}
+                    >
+                        <a href="#" style={styles.navbarLink}>Materi</a>
+                        {showTentangKami && (
+                            <ul style={{ ...styles.dropdownMenu, ...styles.showDropdown }}>
+                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Materi 1</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Materi 2</a></li>
+                            </ul>
+                        )}
+                    </li>
+
+                    <li style={styles.navbarMenuItem}><a href="#" style={styles.navbarLink}>Latihan</a></li>
+                    <li style={styles.navbarMenuItem}><a href="#" style={styles.navbarLink}>Menu</a></li>
+                    <li style={styles.navbarMenuItem}><a href="#" style={styles.navbarLink}>Kontak</a></li>
+                    
+                    <li
+                        style={styles.navbarMenuItem}
+                        onMouseEnter={() => setShowAkademik(true)}
+                        onMouseLeave={() => setShowAkademik(false)}
+                    >
+                        <div style={styles.accountIcon}>
+                            <img src="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        </div>
+                        {showAkademik && (
+                            <ul style={{ ...styles.dropdownMenu, ...styles.showDropdown }}>
+                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Login</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Register</a></li>
+                            </ul>
+                        )}
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
-export default NavbarComponent;
+export default Navbar;
