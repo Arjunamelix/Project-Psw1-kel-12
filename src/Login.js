@@ -29,7 +29,7 @@ const Login =() => {
         if (username === storedusername && password === storedpassword) {
             setMessage("Eaa berhasil login");
             setIsError(false);
-            navigate ('/Home');
+            navigate ('/MenuHome');
         } else {
             setMessage("Salah pasti password mu");
             setIsError(true);

@@ -4,8 +4,9 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import NavbarComponent from "./Header";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
+import {FaSomeIcon} from 'react-icons/fa';
 
-const Home = () => {
+const MenuHome = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -53,4 +54,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default MenuHome;
