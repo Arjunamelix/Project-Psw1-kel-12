@@ -3,7 +3,8 @@ import Daftar from './Daftar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import Login from './Login';
-import MenuHome from './components/MenuHome';
+import MenuHome from './pages/MenuHome';
+import './App.css';
 
 
 const App = () => {
