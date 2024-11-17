@@ -104,6 +104,17 @@ const Login =() => {
                 <p>{message}</p>
             </div>
             )}
+
+            <div className="mt-3 text-center">
+                <p>Belum punya akun? 
+                    <button
+                        className="btn btn-link"
+                        onClick={() => navigate('/daftar')}>
+                            Daftar dulu
+                    </button>
+                </p>
+            </div>
+
         </div>
     </div>
     );
