@@ -15,6 +15,7 @@ import Modul7 from './pages/Modul7';
 import Modul8 from './pages/Modul8';
 import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
+import MenuBook from "./pages/MenuBook";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <Route path="/modul8" element={<Modul8/>}/>
       <Route path="/modul9" element={<Modul9/>}/>
       <Route path="/modul10" element={<Modul10/>}/>
+      <Route path="/menubook" element={<MenuBook/>}/>
 
     </Routes>
     </div>

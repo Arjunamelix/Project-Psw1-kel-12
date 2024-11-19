@@ -5,6 +5,8 @@ import Navbar from "../components/Header";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import {FaSomeIcon} from 'react-icons/fa';
+import { BiBorderRadius } from "react-icons/bi";
+
 
 const MenuHome = () => {
     const navigate = useNavigate();
