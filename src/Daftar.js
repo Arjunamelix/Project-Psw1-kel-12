@@ -43,30 +43,29 @@ const Daftar =() => {
             justifyContent:"center",
             alignItems:"center",
             minHeight:"100vh",
-            backgroundColor:"#f7f9fc",
-            padding:"20px"
+            backgroundColor:"#F0F4F8",
+            padding:"20px",
         }}>
         <div style={{
                 display:"flex",
                 flexDirection:"row",
-                backgroundColor:"#ffffff",
+                backgroundColor:"#fff",
                 borderRadius:"10px",
-                boxShadow:"0 4px 12px rgba(0, 0, 0, 0.1)",
+                boxShadow:"0 8px 20px rgba(0, 0, 0, 0.1)",
                 maxWidth:"900px",
                 width:"100%",
                 overflow:"hidden"
             }} >
                <div style={{
-                backgroundColor:"#003366",
-                color:"#ffffff",
-                padding:"40px",
-                display:"flex",
-                flexDirection:"column",
-                justifyContent:"center",
-                width:"50%"
+                width:"50%",
+                backgroundImage:"url('einsten.png')",
+                backgroundSize:"cover",
+                backgroundPosition:"center",
+                borderTopLeftRadius:"10px",
+                borderBottomRightRadius:"10px",
                }}>
 
-            <h2 style={{
+            {/* <h2 style={{
                 fontSize:"28px",
                 fontWeight:"bold",
                 marginBottom:"20px",
@@ -78,23 +77,26 @@ const Daftar =() => {
                 marginBottom:"20px",
             }}>
                 Buruan Join
-            </p>
+            </p> */}
 
             <div style={{
                 display:"flex",
                 justifyContent:"center",
             }}>
-                <img src=""
+                {/* <img src="fisika.png"
                 style={{
                     borderRadius:"8px",
                     width:"80%",
-                }} />
+                }} /> */}
                 </div>
             </div>
 
             <div style={{
                 padding:"40px",
-                width:"50%"
+                width:"50%",
+                display:"flex",
+                flexDirection:"column",
+                justifyContent:"center",
             }}>
             
             <h3 style={{
@@ -116,11 +118,12 @@ const Daftar =() => {
                     onChange={(e) => setUsername(e.target.value)}
                     required 
                     style={{
-                        padding:"10px",
-                        fontSize:"14px",
+                        padding:"12px",
+                        fontSize:"16px",
                         borderRadius:"5px",
                         border:"1px solid #ddd",
-                        width:"100%"
+                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                        transition:"all 0.3s"
                     }}
                 />
                 
@@ -134,11 +137,13 @@ const Daftar =() => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                     style={{
-                        padding:"10px",
-                        fontSize:"14px",
+                        padding:"12px",
+                        fontSize:"16px",
                         borderRadius:"5px",
-                        border:"1 px solid #ddd",
-                        width:"100%"
+                        border:"1px solid #ddd",
+                        width:"100%",
+                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                        transition:"all 0.3s"
                     }}
                     />
                     
@@ -161,11 +166,13 @@ const Daftar =() => {
                 onChange={(e)  => setSchoolname(e.target.value)}
                 required
                 style={{
-                    padding:"10px",
-                    fontSize:"14px",
+                    padding:"12px",
+                    fontSize:"16px",
                     borderRadius:"5px",
                     border:"1px solid #ddd",
-                    width:"100%"
+                    width:"100%",
+                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                    transition:"all 0.3s"
                 }}
                 />
                 
@@ -176,11 +183,13 @@ const Daftar =() => {
                 onChange={(e) => setSchooladdress(e.target.value)}
                 required
                 style={{
-                    padding:"10px",
-                    fontSize:"14px",
+                    padding:"12px",
+                    fontSize:"16px",
                     borderRadius:"5px",
                     border:"1px solid #ddd",
-                    width:"100%"
+                    width:"100%",
+                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                    transition:"all 0.3s"
                 }}
                 />
 
@@ -191,11 +200,13 @@ const Daftar =() => {
                 onChange={(e) => setDistrict(e.target.value)}
                 required
                 style={{
-                    padding:"10px",
-                    fontSize:"14px",
+                    padding:"12px",
+                    fontSize:"16px",
                     borderRadius:"5px",
                     border:"1px solid #ddd",
-                    width:"100%"
+                    width:"100%",
+                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                    transition:"all 0.3s"
                 }}
                 />
 
@@ -206,11 +217,13 @@ const Daftar =() => {
                 onChange={(e) => setProvince(e.target.value)}
                 required
                 style={{
-                    padding:"10px",
-                    fontSize:"14px",
+                    padding:"12px",
+                    fontSize:"16px",
                     borderRadius:"5px",
                     border:"1px solid #ddd",
-                    width:"100%"
+                    width:"100%",
+                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                    transition:"all 0.3s"
                 }}
                 />
 
@@ -221,19 +234,21 @@ const Daftar =() => {
                 onChange={(e) => setDate(e.target.value)}
                 required
                 style={{
-                    padding:"10px",
-                    fontSize:"14px",
+                    padding:"12px",
+                    fontSize:"16px",
                     borderRadius:"5px",
                     border:"1px solid #ddd",
-                    width:"100%"
+                    width:"100%",
+                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                    transition:"all 0.3s"
                 }}
                 />
 
                 <button type="submit"
                     style={{
                         marginTop:"20px",
-                        padding:"10px",
-                        fontSize:"16px",
+                        padding:"12px",
+                        fontSize:"18px",
                         borderRadius:"5px",
                         border:"none",
                         width:"100%",
@@ -242,15 +257,27 @@ const Daftar =() => {
                         cursor:"pointer",
                         transition:"background-color 0.3s ease"
                     }}
+
+                    onMouseEnter={(e) => 
+                        (e.target.style.transform="scale(1.05)")
+                    }
+                    onMouseLeave={(e) => 
+                    (e.target.style.transform="scale(1)")
+                    }
+
                 >Register</button>
             </form>
             {message && <div style={{
-                marginTop:"20px",
+                fontSize:"18px",
                 padding:"10px",
                 borderRadius:"5px",
+                border:"none",
                 backgroundColor:"#DFF0D8",
                 color:"#3C763D",
-                textAlign:"center"
+                cursor:"pointer",
+                transition:"all 0.3 ease",
+                boxShadow:"0px 4px 8px rgba(0, 0, 0, 0.1)",
+                
             }}>
                 {message}
         </div>}

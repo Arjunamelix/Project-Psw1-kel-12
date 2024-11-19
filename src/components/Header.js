@@ -1,8 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
     const [showTentangKami, setShowTentangKami] = useState(false);
     const [showAkademik, setShowAkademik] = useState(false);
+    const[username,setUsername] = useState(localStorage.getItem('username') || null);
+
+    useEffect(() => {
+        const storedUsername = localStorage.getItem('username');
+        setUsername(storedUsername);
+    }, []);
+
+    const handleLogout = () => {
+        localStorage.removeItem('username');
+        setUsername(null);
+    };
 
     const styles = {
         header: {
@@ -124,19 +135,31 @@ const Navbar = () => {
                     <li style={styles.navbarMenuItem}><a href="#" style={styles.navbarLink}>Kontak</a></li>
                     
                     <li
-                        style={styles.navbarMenuItem}
-                        onMouseEnter={() => setShowAkademik(true)}
-                        onMouseLeave={() => setShowAkademik(false)}
-                    >
-                        <div style={styles.accountIcon}>
+                        style={styles.navbarMenuItem}>
+                            {username? (
+                                <div style={{
+                                    color:'#fff',
+                                    fontWeight:'bold',
+                                    cursor:"pointer",
+                                }} onClick={handleLogout}>
+                                {username}
+                            </div>
+                            ) : (
+                                <div
+                                style={styles.accountIcon}
+                                onMouseEnter={() => setShowAkademik(true)}
+                                onMouseLeave={() => setShowAkademik(false)}
+                                >
+                            
                             <img src="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                        </div>
                         {showAkademik && (
                             <ul style={{ ...styles.dropdownMenu, ...styles.showDropdown }}>
-                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Login</a></li>
-                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Register</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/login" style={styles.dropdownMenuLink}>Login</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/daftar" style={styles.dropdownMenuLink}>Register</a></li>
                             </ul>
                         )}
+                    </div>
+                    )}
                     </li>
                 </ul>
             </nav>
