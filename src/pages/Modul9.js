@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modul2 = () => {
+const Modul9 = () => {
     return (
         <div className="container">
             <style>
@@ -43,51 +43,65 @@ const Modul2 = () => {
                 `}
             </style>
             <header>
-                <h1>ELASTISITAS BAHAN</h1>
+                <h1>GELOMBANG BUNYI & CAHAYA</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
-                    Elastisitas bahan membahas sifat bahan untuk kembali ke bentuk semula setelah gaya yang diberikan dihilangkan.
-                    Konsep ini penting dalam memahami perilaku berbagai material dalam kehidupan sehari-hari.
+                    Gelombang bunyi dan cahaya merupakan dua jenis gelombang yang sangat penting dalam kehidupan sehari-hari.
+                    Gelombang bunyi merambat melalui medium seperti udara, air, atau padatan, sedangkan gelombang cahaya dapat merambat bahkan di ruang hampa.                
                 </p>
             </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
-                        <strong> Modulus Elastisitas (E):</strong> Perbandingan antara teganganb (stress) dan regangan (strain).
+                        <strong> Frekuensi (f):</strong> Jumlah gelombang yang melewati suatu titik per detik.
                     </li>
                     <li>
-                        <strong>Hukum Hoke:</strong> Tegangan sebanding dengan regangan, selama batas elastisitas tidak terlampaui.
+                        <strong>Periode (T)</strong> Waktu yang diperlukan untuk suatu siklus penuh gelombang.
+                    </li>
+                    <li>
+                        <strong>Panjang Gelombang (λ):</strong> Jarak antara dua titik berturut-turut yang setara pada gelombang .
+                    </li>
+                    <li>
+                        <strong>Kecepatan Gelombang (v):</strong> Jarak yang ditempuh gelomban per satuan waktu.
+                    </li>
+                    <li>
+                        <strong>Amplitudo (A):</strong> Besarnya simpangan dari tiitk keseimbangan.
                     </li>
                 </ul>     
             </section>
             <section>
-                <h2>Persamaan Penting</h2>
+                <h2>Perbedaan Gelombang Bunyi dan Cahaya</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Konsep</th>
-                            <th>Persamaan</th>
-                            <th>Keterangan</th>
+                            <th>Karakteristik</th>
+                            <th>Gelombang Bunyi</th>
+                            <th>Gelombang Cahaya</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tegangan (Stress)</td>
-                            <td>σ = F / A</td>
-                            <td>F = gaya, A = luas penampang</td>
+                            <td>Jenis Gelombang</td>
+                            <td>Gelombang Mekanik</td>
+                            <td>Gelombang Elektromagnetik</td>
                         </tr>
                         <tr>
-                            <td>Regangan (Strain)</td>
-                            <td>ε = ΔL / L₀</td>
-                            <td>ΔL = perubahan panjang, L₀ = panjang awal</td>
+                            <td>Medium</td>
+                            <td>Memerlukan medium untuk merambat</td>
+                            <td>Dapat merambat diruang hampa</td>
                         </tr>
                         <tr>
-                            <td>Modulus Elastisitas</td>
-                            <td>E = σ / ε</td>
-                            <td> = tegangan, ε = regangan</td>
+                            <td>Kecepatan</td>
+                            <td>~343 m/s (di udara pada suhu 20°C)</td>
+                            <td>~3 × 10⁸ m/s (di ruang hampa)</td>
+                        </tr>
+                        <tr>
+                            <td>Panjang Gelombang</td>
+                            <td>Beberapa mm hingga beberapa meter</td>
+                            <td>10⁻¹⁴ m hingga beberapa km</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,11 +109,12 @@ const Modul2 = () => {
             <section>
                 <h2>Contoh Aplikasi</h2>
                 <p>
-                   Elastisitas bahan diaplikasikan dalam berbagai bidang seperti teknik mesin, konstruksi, dan desain material, misalnya perancangan jembatan, pegas kendaraan dan kabel baja.
+                <strong>Gelombang Bunyi:</strong> Digunakan dalam sonar, USG medis, dan sistem komunikasi.  
+                <strong>Gelombang Cahaya:</strong> Penting untuk teknologi optik, komunikasi serat optik, dan energi surya.
                 </p>
             </section>
         </div>
     );
 };
 
-export default Modul2;
+export default Modul9;

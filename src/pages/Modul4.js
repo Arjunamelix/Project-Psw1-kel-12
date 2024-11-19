@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modul2 = () => {
+const Modul4 = () => {
     return (
         <div className="container">
             <style>
@@ -43,23 +43,22 @@ const Modul2 = () => {
                 `}
             </style>
             <header>
-                <h1>ELASTISITAS BAHAN</h1>
+                <h1>FLUIDA DINAMIS</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
-                    Elastisitas bahan membahas sifat bahan untuk kembali ke bentuk semula setelah gaya yang diberikan dihilangkan.
-                    Konsep ini penting dalam memahami perilaku berbagai material dalam kehidupan sehari-hari.
+                    Fluida dinamis mempelajari fluida yang sedang bergerak. Topik ini penting dalam analisis aliran fluida seperti dalam pipa, sungai, dan sistem hidrolik.
                 </p>
             </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
-                        <strong> Modulus Elastisitas (E):</strong> Perbandingan antara teganganb (stress) dan regangan (strain).
+                        <strong> Persamaan Kontinuitas:</strong> Menyatakan bahwa laju aliran massa fluida tetap konstan pada setiap titik dalam sistem tertutup.
                     </li>
                     <li>
-                        <strong>Hukum Hoke:</strong> Tegangan sebanding dengan regangan, selama batas elastisitas tidak terlampaui.
+                        <strong>Hukum Bernoulli:</strong> Energi total per satuan volume fluida yang bergerak tetap konstan sepanjang garis aliran.
                     </li>
                 </ul>     
             </section>
@@ -75,19 +74,19 @@ const Modul2 = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tegangan (Stress)</td>
-                            <td>σ = F / A</td>
-                            <td>F = gaya, A = luas penampang</td>
+                            <td>Persamaan Kontinuitas</td>
+                            <td>A₁v₁ = A₂v₂</td>
+                            <td>A = luas penampang, V = kecepatan fluida</td>
                         </tr>
                         <tr>
-                            <td>Regangan (Strain)</td>
-                            <td>ε = ΔL / L₀</td>
-                            <td>ΔL = perubahan panjang, L₀ = panjang awal</td>
+                            <td>Hukum Bernoulli</td>
+                            <td>P + ½ρv² + ρgh = konstan</td>
+                            <td>P = tekanan, ρ = massa jenis fluida, v = kecepatan fluida, h = ketinggian</td>
                         </tr>
                         <tr>
-                            <td>Modulus Elastisitas</td>
-                            <td>E = σ / ε</td>
-                            <td> = tegangan, ε = regangan</td>
+                            <td>Debit</td>
+                            <td>Q = Av</td>
+                            <td>A = luas penampang, v = kecepatan fluida</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,11 +94,11 @@ const Modul2 = () => {
             <section>
                 <h2>Contoh Aplikasi</h2>
                 <p>
-                   Elastisitas bahan diaplikasikan dalam berbagai bidang seperti teknik mesin, konstruksi, dan desain material, misalnya perancangan jembatan, pegas kendaraan dan kabel baja.
+                   Fluida dinamis diaplikasikan dalam sistem pipa, desain pesawat, irigasi, dan alat seperti pompa dan turbin.
                 </p>
             </section>
         </div>
     );
 };
 
-export default Modul2;
+export default Modul4;

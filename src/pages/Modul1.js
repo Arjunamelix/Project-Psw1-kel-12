@@ -1,6 +1,7 @@
 import React from "react";
 
-const Modul2 = () => {
+
+const Modul1 = () => {
     return (
         <div className="container">
             <style>
@@ -43,23 +44,23 @@ const Modul2 = () => {
                 `}
             </style>
             <header>
-                <h1>ELASTISITAS BAHAN</h1>
+                <h1>DINAMIKA ROTASI DAN BENDA TEGAR</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
-                    Elastisitas bahan membahas sifat bahan untuk kembali ke bentuk semula setelah gaya yang diberikan dihilangkan.
-                    Konsep ini penting dalam memahami perilaku berbagai material dalam kehidupan sehari-hari.
+                    Dinamika rotasi membahas gerak rotasi benda tegar, yaitu benda yang
+                    bentuk dan dimensinya tidak berubah meskipun mengalami gaya.
                 </p>
             </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
-                        <strong> Modulus Elastisitas (E):</strong> Perbandingan antara teganganb (stress) dan regangan (strain).
+                        <strong> Torque (τ):</strong> Gaya yang menyebabkan benda berputar.
                     </li>
                     <li>
-                        <strong>Hukum Hoke:</strong> Tegangan sebanding dengan regangan, selama batas elastisitas tidak terlampaui.
+                        <strong>Hukum Newton Rotasi:</strong> Στ = Iα
                     </li>
                 </ul>     
             </section>
@@ -75,19 +76,19 @@ const Modul2 = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tegangan (Stress)</td>
-                            <td>σ = F / A</td>
-                            <td>F = gaya, A = luas penampang</td>
+                            <td>Momen Inersia</td>
+                            <td>I = Σmᵢrᵢ²</td>
+                            <td>rᵢ = jarak partikel ke sumbu rotasi</td>
                         </tr>
                         <tr>
-                            <td>Regangan (Strain)</td>
-                            <td>ε = ΔL / L₀</td>
-                            <td>ΔL = perubahan panjang, L₀ = panjang awal</td>
+                            <td>Hubungan Torque</td>
+                            <td>τ = r × F</td>
+                            <td>r = lengan gaya, F = gaya</td>
                         </tr>
                         <tr>
-                            <td>Modulus Elastisitas</td>
-                            <td>E = σ / ε</td>
-                            <td> = tegangan, ε = regangan</td>
+                            <td>Energi Kinetik Rotasi</td>
+                            <td>E = (1/2)Iω²</td>
+                            <td>ω = kecepatan sudut</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,11 +96,12 @@ const Modul2 = () => {
             <section>
                 <h2>Contoh Aplikasi</h2>
                 <p>
-                   Elastisitas bahan diaplikasikan dalam berbagai bidang seperti teknik mesin, konstruksi, dan desain material, misalnya perancangan jembatan, pegas kendaraan dan kabel baja.
+                    Dinamika rotasi banyak diaolikasikan dalam kehidupan sehari-hari,
+                    seperti roda mobil, mesin turbin, dan permainan bola.
                 </p>
             </section>
         </div>
     );
 };
 
-export default Modul2;
+export default Modul1;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modul2 = () => {
+const Modul5 = () => {
     return (
         <div className="container">
             <style>
@@ -43,23 +43,26 @@ const Modul2 = () => {
                 `}
             </style>
             <header>
-                <h1>ELASTISITAS BAHAN</h1>
+                <h1>SUHU DAN KALOR</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
-                    Elastisitas bahan membahas sifat bahan untuk kembali ke bentuk semula setelah gaya yang diberikan dihilangkan.
-                    Konsep ini penting dalam memahami perilaku berbagai material dalam kehidupan sehari-hari.
+                    Suhu dan kalor adalah dua konsep penting dalam termodinamika yang saling berkaitan.
+                    Suhu mengukur tingkat panas suatu benda, sedangkan kalor adalah energi yang berpindah akibat perbedaan suhu.
                 </p>
             </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
-                        <strong> Modulus Elastisitas (E):</strong> Perbandingan antara teganganb (stress) dan regangan (strain).
+                        <strong> Suhu:</strong> Ukuran tingkat panas atau dingin suatu benda, biasanya dinyatakan dalam skala Celcius, Fahrenheit, atau Kelvin.
                     </li>
                     <li>
-                        <strong>Hukum Hoke:</strong> Tegangan sebanding dengan regangan, selama batas elastisitas tidak terlampaui.
+                        <strong>Kalor:</strong> Energi yang berpindah akibat perbedaan suhu antara dua benda.
+                    </li>
+                    <li>
+                        <strong>Kalor Jenis (c):</strong> Jumlah energi yang diperlukan untuk menaikkan suhu 1 kg zat sebesar 1°C.
                     </li>
                 </ul>     
             </section>
@@ -75,19 +78,19 @@ const Modul2 = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tegangan (Stress)</td>
-                            <td>σ = F / A</td>
-                            <td>F = gaya, A = luas penampang</td>
+                            <td>Hubungan Kalor</td>
+                            <td>Q = mcΔT</td>
+                            <td>Q = kalor, m = massa, c = kalor jenis, ΔT = perubahan suhu</td>
                         </tr>
                         <tr>
-                            <td>Regangan (Strain)</td>
-                            <td>ε = ΔL / L₀</td>
-                            <td>ΔL = perubahan panjang, L₀ = panjang awal</td>
+                            <td>Perpindahan Kalor </td>
+                            <td>P = kA(T₁ - T₂) / d</td>
+                            <td>k = konduktivitas termal, A = luas, d = ketebalan</td>
                         </tr>
                         <tr>
-                            <td>Modulus Elastisitas</td>
-                            <td>E = σ / ε</td>
-                            <td> = tegangan, ε = regangan</td>
+                            <td>Energi dalam Perubahan Wujud</td>
+                            <td>Q = mL</td>
+                            <td>m = massa, L = kalor laten</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,11 +98,12 @@ const Modul2 = () => {
             <section>
                 <h2>Contoh Aplikasi</h2>
                 <p>
-                   Elastisitas bahan diaplikasikan dalam berbagai bidang seperti teknik mesin, konstruksi, dan desain material, misalnya perancangan jembatan, pegas kendaraan dan kabel baja.
+                   Konsep suhu dan kalor digunakan dalam pengaturan suhu ruangan (AC atau pemanas), desain alat memasak,
+                   pengolahan makanan, serta teknik pendinginan seperti kulkas dan freezer.
                 </p>
             </section>
         </div>
     );
 };
 
-export default Modul2;
+export default Modul5;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modul2 = () => {
+const Modul3 = () => {
     return (
         <div className="container">
             <style>
@@ -43,23 +43,26 @@ const Modul2 = () => {
                 `}
             </style>
             <header>
-                <h1>ELASTISITAS BAHAN</h1>
+                <h1>FLUIDA STATIS</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
-                    Elastisitas bahan membahas sifat bahan untuk kembali ke bentuk semula setelah gaya yang diberikan dihilangkan.
-                    Konsep ini penting dalam memahami perilaku berbagai material dalam kehidupan sehari-hari.
+                    Fluida statis mempelajari fluida yang berada dalam keadaan diam dan gaya yang bekerja pada fluida tersebut.
+                    Konsep ini penting untuk memahami tekanan pada fluida, hukum pascal, dan prinsip Archimedes.
                 </p>
             </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
-                        <strong> Modulus Elastisitas (E):</strong> Perbandingan antara teganganb (stress) dan regangan (strain).
+                        <strong> Tekanan (P):</strong> Gaya per satuan luas pada permukaan fluida .
                     </li>
                     <li>
-                        <strong>Hukum Hoke:</strong> Tegangan sebanding dengan regangan, selama batas elastisitas tidak terlampaui.
+                        <strong>Hukum Pascal:</strong> Tekanan yang diberikan pada fluida dalam ruangan tertutup diteruskan ke segala arah dengan sama besar.
+                    </li>
+                    <li>
+                        <strong>Prinsip Archimedes</strong> Benda yang dicelupkan ke dalam fluida akan mengalami gaya angkat ke atas sebesar berat fluida yang dipindahkan.
                     </li>
                 </ul>     
             </section>
@@ -68,26 +71,21 @@ const Modul2 = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Konsep</th>
-                            <th>Persamaan</th>
-                            <th>Keterangan</th>
+                            <th>KTekanan</th>
+                            <th>P = F / A</th>
+                            <th>F = gaya, A = luas permukaan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tegangan (Stress)</td>
-                            <td>σ = F / A</td>
-                            <td>F = gaya, A = luas penampang</td>
+                            <td>Tekanan Hidrostatis</td>
+                            <td>P = pgh</td>
+                            <td>ρ = massa jenis fluida, g = gravitasi, h = kedalaman</td>
                         </tr>
                         <tr>
-                            <td>Regangan (Strain)</td>
-                            <td>ε = ΔL / L₀</td>
-                            <td>ΔL = perubahan panjang, L₀ = panjang awal</td>
-                        </tr>
-                        <tr>
-                            <td>Modulus Elastisitas</td>
-                            <td>E = σ / ε</td>
-                            <td> = tegangan, ε = regangan</td>
+                            <td>Gaya Angkat Archimedes</td>
+                            <td>F = ρVg</td>
+                            <td>ρ = massa jenis fluida, V = volume benda tercelup, g = gravitasi</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,11 +93,11 @@ const Modul2 = () => {
             <section>
                 <h2>Contoh Aplikasi</h2>
                 <p>
-                   Elastisitas bahan diaplikasikan dalam berbagai bidang seperti teknik mesin, konstruksi, dan desain material, misalnya perancangan jembatan, pegas kendaraan dan kabel baja.
+                   Fluida statis digunakan dalam perancangan kapal, dam, pompa hidrolik, dan alat pengukur tekanan seperti barometer dan manometer.
                 </p>
             </section>
         </div>
     );
 };
 
-export default Modul2;
+export default Modul3;
