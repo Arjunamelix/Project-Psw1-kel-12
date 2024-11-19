@@ -124,7 +124,7 @@ const Navbar = () => {
                         <a href="#" style={styles.navbarLink}>Materi</a>
                         {showTentangKami && (
                             <ul style={{ ...styles.dropdownMenu, ...styles.showDropdown }}>
-                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Materi 1</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul1" style={styles.dropdownMenuLink}>Materi 1</a></li>
                                 <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Materi 2</a></li>
                             </ul>
                         )}

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-do
 import Login from './Login';
 import MenuHome from './pages/MenuHome';
 import './App.css';
+import Modul1 from './pages/Modul1'
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/daftar" element={<Daftar />}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/menuhome" element={<MenuHome/>}/>
+      <Route path="/modul1" element={<Modul1/>}/>
 
     </Routes>
     </div>
