@@ -125,7 +125,15 @@ const Navbar = () => {
                         {showTentangKami && (
                             <ul style={{ ...styles.dropdownMenu, ...styles.showDropdown }}>
                                 <li style={styles.dropdownMenuItem}><a href="/modul1" style={styles.dropdownMenuLink}>Materi 1</a></li>
-                                <li style={styles.dropdownMenuItem}><a href="#" style={styles.dropdownMenuLink}>Materi 2</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul2" style={styles.dropdownMenuLink}>Materi 2</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul3" style={styles.dropdownMenuLink}>Materi 3</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul4" style={styles.dropdownMenuLink}>Materi 4</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul5" style={styles.dropdownMenuLink}>Materi 5</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul6" style={styles.dropdownMenuLink}>Materi 6</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul7" style={styles.dropdownMenuLink}>Materi 7</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul8" style={styles.dropdownMenuLink}>Materi 8</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul9" style={styles.dropdownMenuLink}>Materi 9</a></li>
+                                <li style={styles.dropdownMenuItem}><a href="/modul10" style={styles.dropdownMenuLink}>Materi 10</a></li>
                             </ul>
                         )}
                     </li>

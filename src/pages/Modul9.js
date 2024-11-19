@@ -59,7 +59,7 @@ const Modul9 = () => {
                         <strong> Frekuensi (f):</strong> Jumlah gelombang yang melewati suatu titik per detik.
                     </li>
                     <li>
-                        <strong>Periode (T)</strong> Waktu yang diperlukan untuk suatu siklus penuh gelombang.
+                        <strong>Periode (T):</strong> Waktu yang diperlukan untuk suatu siklus penuh gelombang.
                     </li>
                     <li>
                         <strong>Panjang Gelombang (λ):</strong> Jarak antara dua titik berturut-turut yang setara pada gelombang .
