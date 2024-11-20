@@ -49,7 +49,7 @@ const Book4= () => {
     return (
         <div style={sectionStyle}>
             <img 
-            src="buku.png" 
+            src="buku.jpg" 
             alt="buku"
             style={image}
             onMouseEnter={handleMouseEnter}
