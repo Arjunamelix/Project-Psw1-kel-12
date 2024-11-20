@@ -15,11 +15,12 @@ const Modul1 = () => {
                         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
                         max-width:1000px;
                         margin:20px auto;
+                        display: block;
                         animation:fadein 0.6s ease-in-out;
                     }
                    
                     .card {
-                        background: linear-gradient (135deg, #ffffff; #f9fbe7);
+                        background: linear-gradient(135deg, #ffffff; #f9fbe7);
                         border-left:4px solid #007acc
                         border-radius: 8px;
                         margin-bottom: 20px;
