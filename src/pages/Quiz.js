@@ -5,21 +5,21 @@ const Quiz = () => {
         {
             question: "Hukum Newton I menyatakan bahwa ...",
             options: [
-                "Benda tetap diam atau bergerak lurus beraturan jika tidak ada gaya yang bekerja",
-                "Gaya berbanding lurus dengan percepatan",
-                "Setiap aksi memiliki reaksi yang sama besar dan berlawanan arah",
-                "Momentum benda selalu konstan",
+                "A.Benda tetap diam atau bergerak lurus beraturan jika tidak ada gaya yang bekerja",
+                "B.Gaya berbanding lurus dengan percepatan",
+                "C.Setiap aksi memiliki reaksi yang sama besar dan berlawanan arah",
+                "D.Momentum benda selalu konstan",
             ],
             answer: 0,
         },
         {
             question: "Percepatan gravitasi di permukaan bumi adalah ...",
-            options: ["9,8 m/s²", "10 m/s²", "8,9 m/s²", "9 m/s²"],
+            options: ["A. 9,8 m/s²", "B. 10 m/s²", "C. 8,9 m/s²", "D. 9 m/s²"],
             answer: 0,
         },
         {
             question: "Energi kinetik suatu benda dihitung dengan rumus ...",
-            options: ["1/2 m v²", "m g h", "1/2 k x²", "m a s"],
+            options: ["A. 1/2 m v²", "B.m g h", "C. 1/2 k x²", "D. m a s"],
             answer: 0,
 
         },
@@ -28,20 +28,28 @@ const Quiz = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
-    const [selectedAnswer, setSelectedAnswer] = useSatet(null);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [isCorrect, setIsCorrect] = useState(null);
 
     const handleAnswerOptionClick = (index) => {
-        if (index === question[currentQuestion].answer) {
+        setSelectedAnswer(index);
+        const isAnswerCorrect = index === question[currentQuestion].answer;
+        setIsCorrect(isAnswerCorrect);
+
+        if (isAnswerCorrect) {
             setScore(score + 1);
         }
 
-        const nextQuestion = currentQuestion + 1;
-        if (nextQuestion < question.length) {
-            setCurrentQuestion(nextQuestion);
-            setSelectedAnswer(null);
-        } else {
-            setShowScore(true);
-        }
+        setTimeout(() => {
+            const nextQuestion = currentQuestion + 1;
+            if (nextQuestion < question.length) {
+                setCurrentQuestion(nextQuestion);
+                setSelectedAnswer(null);
+                setIsCorrect(null);
+            } else {
+                setShowScore(true);
+            }
+        }, 1000);
     };
 
     return (
@@ -49,34 +57,33 @@ const Quiz = () => {
             <h1 style={styles.title}>Quiz Fisika Kelas 11</h1>
             {showScore ? (
                 <div style={styles.scoreContainer}>
-                    <h2 style={styles.text}>Skor Anda: {score} / {BsQuestionSquare.length}</h2>
+                    <h2 style={styles.text}>Skor Anda: {score} / {question.length}</h2>
                     <button style={styles.button} onClick={() => window.location.reload()}>
-                        Mulai Lagi
+                        Mulai Lagi?
                     </button>
                 </div>
             ) : (
-                <div>
-                    <h2 style={styles.text}>{questions[currentQuestion].question}</h2>
-                    <ul style={styles.optionsList}>
-                        {questions[currentQuestion].options.map((option, index) => (
-                            <li key={index} style={styles.optionItem}>
-                                <button
-                                  onClick={() => handleAnswerOptionClick(index)}
-                                  style={{
-                                    ...styles.button,
-                                    backgroundColor: selectedAnswer === index ? "#001f54" : "#ffbf00",
-                                  }}
+                    <div>
+                        <h2 style={styles.text}>{question[currentQuestion].question}</h2>
+                        <ul style={styles.optionsList}>
+                            {question[currentQuestion].options.map((option, index) => (
+                                <li
+                                key={index}
+                                style={styles.optionItem}
+                                onClick={() => handleAnswerOptionClick(index)}
                                 >
                                     {option}
-                                </button>
-                            </li>
-                        ))}
+                                </li>
+                            )
+                        )}
                     </ul>
                 </div>
             )}
         </div>
     );
 };
+
+
 
 const styles = {
     container: {
@@ -95,7 +102,7 @@ const styles = {
         marginBottom: "15px",
     },
     text: {
-        fontSize: "2.5rem",
+        fontSize: "1.5rem",
         marginBottom: "20px",
     },
     scoreContainer: {
