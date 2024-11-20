@@ -16,6 +16,8 @@ import Modul8 from './pages/Modul8';
 import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
+import Quiz from "./pages/Quiz";
+
 
 const App = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
       <Route path="/modul9" element={<Modul9/>}/>
       <Route path="/modul10" element={<Modul10/>}/>
       <Route path="/menubook" element={<MenuBook/>}/>
+      <Route path="/quiz" element={<Quiz/>}/>
+     
 
     </Routes>
     </div>

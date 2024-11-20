@@ -3,7 +3,7 @@ import React from "react";
 const Modul6 = () => {
     return (
         <div className="container">
-            <style>
+            <style >
                 {`
                     .container {
                         background-color: linear-gradient(135deg, #e0f7fa, #fce4ec);
