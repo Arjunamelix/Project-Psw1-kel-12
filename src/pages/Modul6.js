@@ -3,7 +3,7 @@ import React from "react";
 const Modul6 = () => {
     return (
         <div className="container">
-            <style>
+            <style >
                 {`
                     .container {
                         font-family: Arial, sans-serif;
