@@ -4,12 +4,10 @@ import './zi.css';
 const ComponentName = () => {
     return (
         <div className="main-container">
-            <header className="header">
+            {/* <header className="header">
                 <div className="container">
                     <div className="logo-section">
-                        <a href="#" className="logo-link">
-                            {/* <img className="logo" src="https://d33wubrfki0l68.cloudfront.net/682a555ec15382f2c6e7457ca1ef48d8dbb179ac/f8cd3/images/logo.svg" alt="Logo" /> */}
-                        </a>
+                        <a href="#" className="logo-link"></a>
                     </div>
                     <nav className="navigation">
                         <a href="#" className="nav-link">Learn</a>
@@ -22,24 +20,20 @@ const ComponentName = () => {
                         <a href="#" className="cta-button">Create Free Account</a>
                     </div>
                 </div>
-            </header>
+            </header> */}
             <section className="hero-section">
                 <div className="hero-container">
                     <div className="hero-text">
-                        <h1 className="hero-title">A specialMaterials.</h1>
-                        <p className="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum arcu.</p>
-                        <form className="email-form">
-                            <input type="email" placeholder="Enter email address" className="email-input" required />
-                            <button type="submit" className="submit-button">Get Free Lesson</button>
+                        <h1 className="hero-title">Selamat Datang di Web Pembelajaran Fisika.</h1>
+                        <p className="hero-description">Belajar fisika jadi lebih mudah dan menyenangkan dengan berbagai materi interaktif.</p>
+                        <form className="search-form">
+                            <input type="search" placeholder='Cari "Materi"' className="search-input" required />
+                            <button type="submit" className="submit-button">Telusuri</button>
                         </form>
-                        <div className="stats">
-                            <div className="stat-item">
-                                <p className="stat-value">Tumbnail</p>
-                                <p className="stat-label">Wkwkwkwk</p>
-                            </div>
-                            <div className="stat-item">
-                                <p className="stat-value">$1M</p>
-                                <p className="stat-label">Awowkowkwok</p>
+                        <div className="items-hero">
+                            <div className="item-hero">
+                                {/* <p className="stat-value">Tumbnail</p> */}
+                                <p className="label1">Jelajahi berbagai materi yang menarik dan menantang</p>
                             </div>
                         </div>
                     </div>

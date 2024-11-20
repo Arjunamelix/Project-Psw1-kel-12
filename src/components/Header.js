@@ -17,28 +17,28 @@ const Navbar = () => {
     };
 
     return (
-        <header>
+        <header className="sticky-navbar">
             <div>
-                <span>FISIKA</span>
+                <span>PhysicsUnveiled</span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
+                    <li><a href="/menuhome">Beranda</a></li>
                     <li
                         onMouseEnter={() => setShowTentangKami(true)}
                         onMouseLeave={() => setShowTentangKami(false)}
                     >
-                        <a href="#">Materi</a>
-                        {showTentangKami && (
-                            <ul>
-                                <li><a href="/menubook">Materi</a></li>
-                            </ul>
-                        )}
+                        <a href="/menubook">Materi</a>
                     </li>
                     <li><a href="#">Latihan</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Kontak</a></li>
-                    <li>
+                    <div className="auth-section">
+                        <a href="/login" className="sign-in-link">Sign In</a>
+                        <a href="/daftar" className="cta-button">Create Free Account</a>
+                    </div>
+
+                    {/* <li>
                         {username ? (
                             <div onClick={handleLogout}>
                                 {username}
@@ -58,7 +58,7 @@ const Navbar = () => {
                                 )}
                             </div>
                         )}
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>

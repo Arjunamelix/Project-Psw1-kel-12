@@ -1,19 +1,11 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #1f2937;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    height: 100vh;
+    background-color: white;
 }
 
-/* Header Styles */
 .header {
     background-color: #ffffff;
     padding: 1rem 2rem;
@@ -51,28 +43,11 @@ body {
     color: #2563eb;
 }
 
-.auth-section .sign-in-link {
-    text-decoration: none;
-    color: #1f2937;
-    margin-right: 1rem;
-    font-weight: 500;
-}
-
-.cta-button {
-    background-color: #2563eb;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
 
 .cta-button:hover {
     background-color: #1d4ed8;
 }
 
-/* Hero Section */
 .hero-section {
     display: flex;
     align-items: center;
@@ -107,13 +82,13 @@ body {
     margin-bottom: 2rem;
 }
 
-.email-form {
+.search-form {
     display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem;
 }
 
-.email-input {
+.search-input {
     flex: 1;
     padding: 0.5rem;
     border: 1px solid #d1d5db;
@@ -134,14 +109,9 @@ body {
     background-color: #1d4ed8;
 }
 
-/* Stats */
-.stats {
+.items-hero {
     display: flex;
     gap: 2rem;
-}
-
-.stat-item {
-    text-align: center;
 }
 
 .stat-value {
@@ -150,11 +120,10 @@ body {
     color: #1f2937;
 }
 
-.stat-label {
+.label1 {
     color: #6b7280;
 }
 
-/* Hero Image */
 .hero-image img {
     max-width: 100%;
     height: auto;
