@@ -16,18 +16,36 @@ const MenuBook = () => {
 const navigate = useNavigate
 
 const menubookStyle = {
-    display: "flex",
-    flexWrap:"wrap",
+    display: "grid",
     gap:"20px",
     justifyContent:"center",
+    gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
+    padding:"20px",
+    background:"linear-gradient(135deg, #f5f7fa, #c3cfe2)",
+    borderRadius:"15px",
+    boxShadow:"0 8px 20px rgba(0, 0, 0, 0.2)",
+    animation:"fadeIn 1s ease-in-out",
 };
 
-const bookstyle = {
-    width:"200px",
-    height:"auto",
+const fadeInKeyframes = `
+    @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0);}
+    }
+`;
+
+const styleTag = {
+    __html: `<style> ${fadeInKeyframes}</style>`,
 };
+
+// const bookstyle = {
+//     width:"200px",
+//     height:"auto",
+// };
 
 return (
+    <>
+    <div dangerouslySetInnerHTML={styleTag}></div>
     <div style={menubookStyle}>
     <Book/>
     <Book2/>
@@ -40,7 +58,8 @@ return (
     <Book9/>
     <Book10/>
     </div>
-    )
-}
+    </>
+    );
+};
 
 export default MenuBook;
