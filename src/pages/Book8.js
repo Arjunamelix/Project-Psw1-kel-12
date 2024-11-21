@@ -25,8 +25,11 @@ const Book8= () => {
 
     const title = {
         margin: '20px 0 10px',
+        fontSize:"20px",
         color: '#333',
+        fontFamily:"times new roman"
     };
+
 
     const dekripsi = {
         color:'#666',

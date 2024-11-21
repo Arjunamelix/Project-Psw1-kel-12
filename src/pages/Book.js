@@ -1,4 +1,5 @@
 import React from "react";
+import { BiFontFamily } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 const Book = () => {
@@ -25,7 +26,9 @@ const Book = () => {
 
     const title = {
         margin: '20px 0 10px',
+        fontSize:"20px",
         color: '#333',
+        fontFamily:"times new roman"
     };
 
     const dekripsi = {
