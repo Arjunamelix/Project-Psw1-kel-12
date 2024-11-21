@@ -4,8 +4,9 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
-  border-bottom: 2px solid #1a2d55;
+  /* border-bottom: 2px solid #1a2d55; */
   font-family: Arial, sans-serif;
+  z-index: 50;
 }
 
 .sticky-navbar {

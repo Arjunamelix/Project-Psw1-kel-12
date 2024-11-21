@@ -7,6 +7,7 @@ import Section2 from "./Section2";
 import {FaSomeIcon} from 'react-icons/fa';
 import { BiBorderRadius } from "react-icons/bi";
 import ComponentName from "./zi";
+import Dashboard from './Dashboard';
 
 
 const MenuHome = () => {
@@ -24,6 +25,7 @@ const MenuHome = () => {
             <Navbar />
             <ComponentName />
             <Section2 />
+            <Dashboard />
         </div>
     );
 };
