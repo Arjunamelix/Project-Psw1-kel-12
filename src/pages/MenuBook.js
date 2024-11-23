@@ -13,11 +13,11 @@ import Book10 from "./Book10";
 
 const MenuBook = () => {
     
-const navigate = useNavigate
+const navigate = useNavigate();
 
 const menubookStyle = {
     display: "grid",
-    gap:"20px",
+    gap:"30px",
     justifyContent:"center",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     padding:"20px",
@@ -27,38 +27,53 @@ const menubookStyle = {
     animation:"fadeIn 1s ease-in-out",
 };
 
-const fadeInKeyframes = `
-    @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0);}
-    }
-`;
-
-const styleTag = {
-    __html: `<style> ${fadeInKeyframes}</style>`,
+const cardstyle = {
+    cursor:"pointer",
+    padding:"10px",
+    borderRadius:"10px",
+    backgroundColor:"#fff",
+    boxShadow:"0 4px 10px rgba(0, 0, 0, 0.1)",
+    textAlign:"center",
+    transition:"transform 0.3s, box-shadow 0.3s",
 };
 
-// const bookstyle = {
-//     width:"200px",
-//     height:"auto",
-// };
+const handleCardClick = (bookId) => {
+    navigate(`/modul${bookId}`);
+};
 
 return (
-    <>
-    <div dangerouslySetInnerHTML={styleTag}></div>
     <div style={menubookStyle}>
-    <Book/>
-    <Book2/>
-    <Book3/>
-    <Book4/>
-    <Book5/>
-    <Book6/>
-    <Book7/>
-    <Book8/>
-    <Book9/>
-    <Book10/>
+        <div style={cardstyle} onClick={() => handleCardClick(1)}>
+             <Book/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(2)}>
+             <Book2/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(3)}>
+             <Book3/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(4)}>
+             <Book4/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(5)}>
+             <Book5/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(6)}>
+             <Book6/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(7)}>
+             <Book7/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(8)}>
+             <Book8/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(9)}>
+             <Book9/>
+        </div>
+        <div style={cardstyle} onClick={() => handleCardClick(10)}>
+             <Book10/>
+        </div>
     </div>
-    </>
     );
 };
 
