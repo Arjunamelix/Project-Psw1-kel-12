@@ -35,7 +35,7 @@ const Navbar = () => {
                     <li><a href="#">Kontak</a></li>
                     <div className="auth-section">
                         <a href="/login" className="sign-in-link">Sign In</a>
-                        <a href="/daftar" className="cta-button">Sign Up</a>
+                        <a href="/daftar" className="cta-button">Create Free Account</a>
                     </div>
 
                     {/* <li>
