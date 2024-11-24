@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "../components/Header";
 
 
 const Modul1 = () => {
     return (
+        <div><Navbar />
         <div className="container ">
+            
             <style>
                 {`
                     .container {
@@ -130,6 +133,7 @@ const Modul1 = () => {
                     fontWeight:"bold"
                 }}>DINAMIKA ROTASI DAN BENDA TEGAR</h1>
             </header>
+           
             <section>
                 <h2>Pendahuluan</h2>
                 <p>
@@ -137,6 +141,7 @@ const Modul1 = () => {
                     bentuk dan dimensinya tidak berubah meskipun mengalami gaya.
                 </p>
             </section>
+            
             <section className="card">
                 <h2>Konsep Dasar</h2>
                 <ul>
@@ -148,6 +153,7 @@ const Modul1 = () => {
                     </li>
                 </ul>     
             </section>
+    
             <section className="card"> 
                 <h2>Persamaan Penting</h2>
                 <table>
@@ -184,6 +190,7 @@ const Modul1 = () => {
                     seperti roda mobil, mesin turbin, dan permainan bola.
                 </p>
             </section>
+        </div>
         </div>
     );
 };

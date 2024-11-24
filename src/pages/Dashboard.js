@@ -9,6 +9,8 @@ const Dashboard = () => {
     { name: 'Bab5', learned: 2, total: 8 },
     { name: 'Bab6', learned: 3, total: 8 },
     { name: 'Bab7', learned: 6, total: 12 },
+    { name: 'Bab8', learned: 8, total: 12 },
+    { name: 'Bab9', learned: 9, total: 16 },
   ];
 
   const courses = [
@@ -16,29 +18,40 @@ const Dashboard = () => {
       title: "Gelombang Bunyi & Cahaya",
       category: 'Bab5',
       by: 'Sarjuna',
-      watched: 2,
+      learned: 2,
       total: 12,
       image: 'gmbr',
-      categoryColor: 'bg-blue-200 text-blue-800',
     },
     {
       title: 'Teori Kinetik',
       category: 'Bab6',
       by: 'Sarjuna',
-      watched: 2,
+      learned: 2,
       total: 8,
       image: 'gmbr',
-      categoryColor: 'bg-purple-200 text-purple-800',
     },
     {
-      title: 'Ketimpangan Sosiasl Budaya Dalam Kehidupan Berekonomi Daerah',
+      title: 'Ketimpangan Sosias Budaya Dalam Kehidupan Berekonomi Daerah',
       category: 'Bab7',
       by: 'Sarjuna',
-      watched: 3,
+      learned: 3,
       total: 8,
       image: 'gmbr',
-      categoryColor: 'bg-pink-200 text-pink-800',
     },
+    {
+      title: 'Cara menghadapi stress di lingkungan kerja',
+      category: 'Bab8',
+      by: 'Sarjuna',
+      learned: 4,
+      total: 6,
+    },
+    {
+      title: 'Metode pengembangbiakan Singa Florida',
+      category: 'Bab9',
+      by: 'Sarjuna',
+      learned: 9,
+      total: 16,
+    }
   ];
 
   const filteredCourses =

@@ -13,7 +13,7 @@ const CategoryFilter = ({ categories, selected, onSelect }) => {
         }`}
       >
         <span className="category-name">{category.name}</span>
-        <span className="category-watched">({category.watched}/{category.total})</span>
+        <span className="category-watched">({category.learned}/{category.total})</span>
       </button>
       
       ))}
