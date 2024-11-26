@@ -11,6 +11,9 @@ import Book8 from "./Book8";
 import Book9 from "./Book9";
 import Book10 from "./Book10";
 
+import Navbar from "../components/Header";
+
+
 const MenuBook = () => {
     
 const navigate = useNavigate();
@@ -42,6 +45,7 @@ const handleCardClick = (bookId) => {
 };
 
 return (
+     <div><Navbar />
     <div style={menubookStyle}>
         <div style={cardstyle} onClick={() => handleCardClick(1)}>
              <Book/>
@@ -73,6 +77,7 @@ return (
         <div style={cardstyle} onClick={() => handleCardClick(10)}>
              <Book10/>
         </div>
+    </div>
     </div>
     );
 };
