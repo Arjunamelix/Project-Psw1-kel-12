@@ -1,50 +1,104 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,  useMemo } from "react";
+import Navbar from "../components/Header";
+import {useNavigate} from "react-router-dom";
 
-const Quiz = () => {
+const Quiz = () =>  {
     const styles = {
         container: {
             padding: "20px",
-            fontFamily: "Arial, sans-serif",
-            backgroundColor: "#001f54",
-            color: "#ffbf00",
+            fontFamily: "Poppins, sans-serif",
+            backgroundColor: "#f4f7fc",
+            color: "#333",
             minHeight: "100vh",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
         },
+
         title: {
             fontSize: "2.5rem",
+            fontWeight:"600",
+            color:"#003865",
             marginBottom: "30px",
             textAlign: "center",
         },
-        scoreContainer: {
-            textAlign: "center",
+
+        question: {
+            fontSize:"1.5rem",
+            fontWeight:"500",
+            color:"#003865",
+            marginBottom:"20px",
         },
-        explanation: {
-            marginTop: "15px",
-            backgroundColor: "#00274d",
-            padding: "15px",
-            borderRadius: "8px",
-            color: "#ffffff",
-            fontSize: "1rem",
-            textAlign: "left",
+
+        options: {
+            listStyleType:"none",
+            padding: 0,
+            marginBottom:"20px",
         },
+
+        option: {
+            padding:"12px 20px",
+            margin:"10px 0",
+            cursor:"pointer",
+            borderRadius:"10px",
+            border:"1px solid #003865",
+            backgroundColor:"#e6f7ff",
+            fontSize:"1rem",
+            textAlign:"center",
+            transition:"all 0.3s ease",
+        },
+
+        optionHover: {
+            backgroundColor:"#005792",
+            color:"#fff",
+        },
+
+        buttonContainer: {
+            display:"flex",
+            justifyContent:"space-between",
+            width:"100%",
+            maxWidth: "500px",
+        },
+
         button: {
             padding: "12px 25px",
-            border: "2px solid #ffbf00",
+            border: "none",
             borderRadius: "8px",
             cursor: "pointer",
-            backgroundColor: "#ffbf00",
-            color: "#001f54",
-            fontSize: "1.1rem",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
-            transition: "transform 0.2s, box-shadow 0.2s",
+            fontSize: "1rem",
+            fontWeight:"600",
+            transition: "all 0.3s ease",
+        },
+
+        nextButton: {
+            backgroundColor:"#005792",
+            color:"#fff",
+        },
+
+        backButton: {
+            backgroundColor: "#cccccc",
+            color:"#333",
+        },
+
+        scoreContainer: {
+            textAlign: "center",
+            color:"#003865",
+        },
+
+        explanation: {
             marginTop: "15px",
+            backgroundColor: "#f9f9f9",
+            padding: "15px",
+            borderRadius: "10px",
+            color: "#333",
+            fontSize: "1rem",
+            textAlign:"left",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         },
     };
 
-    const question = [
+    const questionData = [
         {
             question: "Hukum Newton I menyatakan bahwa ...",
             options: [
@@ -73,6 +127,11 @@ const Quiz = () => {
         },
     ];
 
+    const question = useMemo(() => {
+    const shuffleArray = (array) => array.sort(() => Math.random() -0.5);
+    return shuffleArray(questionData)
+    }, []);
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [showScore, setShowScore] = useState(false);
@@ -84,13 +143,7 @@ const Quiz = () => {
         setAnswers(updatedAnswers);
 
         if (index === question[currentQuestion].answer) {
-            setScore((prevScore) =>
-                updatedAnswers[currentQuestion] === question[currentQuestion].answer
-                    ? prevScore
-                    : prevScore + 1
-            );
-        } else if (answers[currentQuestion] === question[currentQuestion].answer) {
-            setScore((prevScore) => prevScore - 1);
+            setScore((prevScore) => prevScore + 1);
         }
     };
 
@@ -109,18 +162,44 @@ const Quiz = () => {
         }
     };
 
+    const navigate = useNavigate();
     return (
+        <div><Navbar />
+
+    <button style={{
+        position:"fixed",
+        top:"150px",
+        left:"20px",
+        background:"linear-gradient(135deg, #007acc, #00bfff)",
+        color:"white",
+        border:"none",
+        borderRadius:"50px",
+        padding:"10px 20px",
+        fontSize:"1rem",
+        fontWeight:"bold",
+        cursor:"pointer",
+        boxShadow:"0 4px 10px rgba(0, 0, 0, 0.3)",
+        transition:"all 0.3s ease-in-out",
+        transform:"scale(1.05)",
+        zIndex: 9999,
+    }}
+                onClick={() => navigate("/menuhome")}
+            > Back
+    </button>
+
         <div style={styles.container}>
             <h1 style={styles.title}>Quiz Fisika Kelas 11</h1>
             {showScore ? (
                 <div style={styles.scoreContainer}>
                     <h2>Skor Anda: {score} / {question.length}</h2>
-                    <button style={styles.button} onClick={() => window.location.reload()}>
+                    <button style={{ ...styles.button, ...styles.nextButton }} onClick={() => window.location.reload()}>
                         Mulai Lagi?
                     </button>
                     <div>
+
                         <h3 style={{ marginTop: "20px" }}>Pembahasan Soal:</h3>
-                        {question.map((q, index) => (
+                        {question.map((q, index) => 
+                            answers[index] !== q.answer ? (
                             <div key={index} style={styles.explanation}>
                                 <strong>Soal {index + 1}:</strong>
                                 <p>{q.question}</p>
@@ -129,47 +208,50 @@ const Quiz = () => {
                                 <strong>Pembahasan:</strong>
                                 <p>{q.explanation}</p>
                             </div>
-                        ))}
+                        ) : null
+                    )}
                     </div>
                 </div>
             ) : (
                 <div>
-                    <h2>{question[currentQuestion].question}</h2>
+                    <h2 style={styles.question}>{question[currentQuestion].question}</h2>
                     <ul>
                         {question[currentQuestion].options.map((option, index) => (
                             <li
                                 key={index}
-                                style={{
-                                    padding: "10px",
-                                    margin: "5px 0",
-                                    cursor: "pointer",
-                                    backgroundColor:
-                                        answers[currentQuestion] === index ? "#ffbf00" : "#001f54",
-                                    color: "#ffffff",
-                                    borderRadius: "8px",
-                                    textAlign: "center",
-                                    border: "1px solid #ffbf00",
-                                }}
+                                role="button"
+                                tabIndex={0}
+                                aria-selected={answers[currentQuestion] === index}
+                                onKeyPress={(e) => e.key === "Enter" && handleAnswerOptionClick(index)}
+                                style={
+                                    answers[currentQuestion] === index 
+                                    ? styles.optionHover
+                                    : styles.option
+                                }
                                 onClick={() => handleAnswerOptionClick(index)}
                             >
                                 {option}
                             </li>
                         ))}
                     </ul>
-                    <div style={{ display: "flex", justifyContent: "space-between" }}>
+                    <div style={styles.buttonContainer}>
                         <button
-                            style={styles.button}
+                            style={{...styles.button, ...styles.backButton}}
                             onClick={handleBackQuestion}
                             disabled={currentQuestion === 0}
                         >
                             Back
                         </button>
-                        <button style={styles.button} onClick={handleNextQuestion}>
+                        <button style={{ ...styles.button, ...styles.nextButton}} 
+                        onClick={handleNextQuestion}
+                        disabled={answers[currentQuestion] === null}
+                        >
                             {currentQuestion === question.length - 1 ? "Finish" : "Next"}
                         </button>
                     </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

@@ -17,6 +17,7 @@ import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
+import Kalkulator from "./pages/Kalkulator";
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
       <Route path="/modul10" element={<Modul10/>}/>
       <Route path="/menubook" element={<MenuBook/>}/>
       <Route path="/quiz" element={<Quiz/>}/>
+      <Route path="/kalkulator" element={<Kalkulator/>}/>
      
 
     </Routes>

@@ -5,35 +5,25 @@ import {FaEye, FaEyeSlash} from "react-icons/fa";
 
 const Daftar =() => {
     const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [schoolname, setSchoolname] = useState('');
-    const [message, setMessage] = useState('');
-    const [schooladdress, setSchooladdress] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const [district, setDistrict] = useState('');
-    const [province, setProvince] = useState('');
-    const [date, setDate] = useState('');
+    const [message, setMessage] = useState('');
     const navigate = useNavigate();
     
     const handleTogglePasswordVisibility = () => setShowPassword (!showPassword);
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setMessage(`Mauliate, ${username}! Kamu telah mendaftar di web ini.`);
 
-        localStorage.setItem("username" , username);
+        localStorage.setItem("email" , email);
         localStorage.setItem("password", password);
         alert("registrasi berhasil silahkan login");
         navigate('/Login');
     
-
+        setEmail('');
         setUsername('');
         setPassword('');
-        setSchoolname('');
-        setSchooladdress('');
-        setDistrict('');
-        setProvince('');
-        setDate('');
     };
 
     return (
@@ -52,43 +42,27 @@ const Daftar =() => {
                 backgroundColor:"#fff",
                 borderRadius:"10px",
                 boxShadow:"0 8px 20px rgba(0, 0, 0, 0.1)",
-                maxWidth:"900px",
+                maxWidth:"800px",
                 width:"100%",
-                overflow:"hidden"
+                overflow:"hidden",
+                border:"1px solid #ddd",
             }} >
-               <div style={{
-                width:"50%",
-                backgroundImage:"url('einsten.png')",
-                backgroundSize:"cover",
-                backgroundPosition:"center",
-                borderTopLeftRadius:"10px",
-                borderBottomRightRadius:"10px",
-               }}>
-
-            {/* <h2 style={{
-                fontSize:"28px",
-                fontWeight:"bold",
-                marginBottom:"20px",
-            }}> Registration Form </h2>
-
-            <p style={{
-                fontSize:"16px",
-                lineHeight:"1.6",
-                marginBottom:"20px",
-            }}>
-                Buruan Join
-            </p> */}
 
             <div style={{
-                display:"flex",
-                justifyContent:"center",
+                width:"50%",
+                overflow:"hidden",
+                position:"relative",
             }}>
-                {/* <img src="fisika.png"
-                style={{
-                    borderRadius:"8px",
-                    width:"80%",
-                }} /> */}
-                </div>
+                <video style={{
+                    width:"100%",
+                    height:"100%",
+                    objectFit:"cover",
+                }}
+                src="bgvideo.mp4"
+                autoPlay
+                loop
+                muted
+                />
             </div>
 
             <div style={{
@@ -105,12 +79,13 @@ const Daftar =() => {
                 marginBottom:"20px",
                 fontSize:"24px",
                 textAlign:"center"
-            }}>Daftar Sini</h3>
+            }}>Sign Up Here</h3>
 
             <form onSubmit={handleSubmit} style={{
                 display:"grid",
                 gap:"15px"
             }}>
+
                     <input
                     type="text"
                     placeholder="username"
@@ -126,6 +101,23 @@ const Daftar =() => {
                         transition:"all 0.3s"
                     }}
                 />
+
+                    <input
+                    type="email"
+                    placeholder="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required 
+                    style={{
+                        padding:"12px",
+                        fontSize:"16px",
+                        borderRadius:"5px",
+                        border:"1px solid #ddd",
+                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
+                        transition:"all 0.3s"
+                    }}
+                />
+                
                 
                 <div style={{
                     position:"relative"
@@ -146,107 +138,12 @@ const Daftar =() => {
                         transition:"all 0.3s"
                     }}
                     />
-                    
-                    {/* <span onClick={handleTogglePasswordVisibility} style={{
-                        position:"absolute",
-                        right:"10px",
-                        top:"50%",
-                        transform:"translateY(-50%)",
-                        cursor:"pointer",
-                        color:"#888"
-                    }}>
-                        {showPassword ? <FaEyeSlash/> : <FaEye />}
-                    </span> */}
                 </div>
-                    
-                <input
-                type="text"
-                placeholder="schoolname"
-                value={schoolname}
-                onChange={(e)  => setSchoolname(e.target.value)}
-                required
-                style={{
-                    padding:"12px",
-                    fontSize:"16px",
-                    borderRadius:"5px",
-                    border:"1px solid #ddd",
-                    width:"100%",
-                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                    transition:"all 0.3s"
-                }}
-                />
-                
-                <input
-                type="text"
-                placeholder="schooladdress"
-                value={schooladdress}
-                onChange={(e) => setSchooladdress(e.target.value)}
-                required
-                style={{
-                    padding:"12px",
-                    fontSize:"16px",
-                    borderRadius:"5px",
-                    border:"1px solid #ddd",
-                    width:"100%",
-                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                    transition:"all 0.3s"
-                }}
-                />
-
-                <input
-                type="text"
-                placeholder="district"
-                value={district}
-                onChange={(e) => setDistrict(e.target.value)}
-                required
-                style={{
-                    padding:"12px",
-                    fontSize:"16px",
-                    borderRadius:"5px",
-                    border:"1px solid #ddd",
-                    width:"100%",
-                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                    transition:"all 0.3s"
-                }}
-                />
-
-                <input
-                type="text"
-                placeholder="province"
-                value={province}
-                onChange={(e) => setProvince(e.target.value)}
-                required
-                style={{
-                    padding:"12px",
-                    fontSize:"16px",
-                    borderRadius:"5px",
-                    border:"1px solid #ddd",
-                    width:"100%",
-                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                    transition:"all 0.3s"
-                }}
-                />
-
-                <input
-                type="date"
-                placeholder="date"
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
-                required
-                style={{
-                    padding:"12px",
-                    fontSize:"16px",
-                    borderRadius:"5px",
-                    border:"1px solid #ddd",
-                    width:"100%",
-                    boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                    transition:"all 0.3s"
-                }}
-                />
 
                 <button type="submit"
                     style={{
                         marginTop:"20px",
+                        justifyContent:"center",
                         padding:"12px",
                         fontSize:"18px",
                         borderRadius:"5px",
@@ -265,7 +162,17 @@ const Daftar =() => {
                     (e.target.style.transform="scale(1)")
                     }
 
-                >Register</button>
+                >Sign Up</button>           
+                
+            <div className="mt-3 text-center">
+                <p>Have An Account?
+                    <button
+                        className="btn btn-link"
+                        onClick={() => navigate('/login')}>
+                            Sign In Here
+                    </button>
+                </p>
+            </div>
             </form>
             {message && <div style={{
                 fontSize:"18px",
@@ -280,6 +187,9 @@ const Daftar =() => {
                 
             }}>
                 {message}
+
+    
+
         </div>}
         </div>
         </div>

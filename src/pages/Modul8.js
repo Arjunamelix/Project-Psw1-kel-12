@@ -1,7 +1,32 @@
 import React from "react";
+import Navbar from "../components/Header";
+import { useNavigate } from "react-router-dom";
 
 const Modul8 = () => {
+    const navigate = useNavigate();
     return (
+        <div><Navbar />
+
+    <button style={{
+        position:"fixed",
+        top:"150px",
+        left:"0.1px",
+        background:"linear-gradient(135deg, #007acc, #00bfff)",
+        color:"white",
+        border:"none",
+        borderRadius:"50px",
+        padding:"10px 20px",
+        fontSize:"1rem",
+        fontWeight:"bold",
+        cursor:"pointer",
+        boxShadow:"0 4px 10px rgba(0, 0, 0, 0.3)",
+        transition:"all 0.3s ease-in-out",
+        transform:"scale(1.05)",
+        zIndex: 9999,
+    }}
+                onClick={() => navigate("/menubook")}
+            > Back
+    </button>
         <div className="container">
             <style>
                 {`
@@ -179,6 +204,7 @@ const Modul8 = () => {
                    teknologi medis seperti USG, dan eksplorasi geologi untuk mendeteksi gempa bumi.
                 </p>
             </section>
+        </div>
         </div>
     );
 };
