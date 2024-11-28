@@ -139,10 +139,6 @@ const Quiz = () =>  {
             explanation:
                  " jarak yang ditempuh mobil adalah 50 m.",     
        },
-
-       [
-        question:
-       ]
         
     ];
 
