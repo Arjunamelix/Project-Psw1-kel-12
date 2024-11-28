@@ -3,16 +3,14 @@ import './Card.css';
 
 const CourseCard = ({ image, title, category, by, learned, total, categoryColor }) => {
   return (
-    <div className="bg-white shadow-md rounded-lg w-64">
+    <div className="course-card bg-white shadow-lg rounded-lg w-64 h-auto overflow-hidden">
       <img
         src={image}
         alt={title}
-        className="rounded-t-lg h-36 w-full object-cover"
+        className="rounded-t-lg w-full h-36 object-cover"
       />
       <div className="p-4">
-        <span
-          className={`text-xs font-semibold py-1 px-2 rounded ${categoryColor}`}
-        >
+        <span className={`text-xs font-semibold py-1 px-2 rounded ${categoryColor}`}>
           {category}
         </span>
         <h3 className="text-base font-semibold mt-2">{title}</h3>
