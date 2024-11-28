@@ -15,8 +15,8 @@ const Login =() => {
         setUsername(event.target.value);
     };
 
-    const handlEEmailChange = (event) => {
-        setUsername(event.target.value);
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
     };
 
     const handlePasswordChange = (event) => {
@@ -27,7 +27,7 @@ const Login =() => {
     
     const handleLogin = (event) => {
         event.preventDefault();
-        const storedusername = localStorage.getItem("email");
+        const storedemail = localStorage.getItem("email");
         const storedpassword = localStorage.getItem("password");
 
         setUsername('');
@@ -97,28 +97,12 @@ const Login =() => {
                 marginBottom:"20px",
                 fontSize:"24px",
                 textAlign:"center"
-            }}>Sign Up Here</h3>
+            }}>Sign In Here</h3>
 
-            <form onSubmit={handleSubmit} style={{
+            <form onSubmit={handleLogin} style={{
                 display:"grid",
                 gap:"15px"
             }}>
-
-                    <input
-                    type="text"
-                    placeholder="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    required 
-                    style={{
-                        padding:"12px",
-                        fontSize:"16px",
-                        borderRadius:"5px",
-                        border:"1px solid #ddd",
-                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                        transition:"all 0.3s"
-                    }}
-                />
 
                     <input
                     type="email"
@@ -206,9 +190,6 @@ const Login =() => {
                 
             }}>
                 {message}
-
-    
-
         </div>}
         </div>
         </div>
