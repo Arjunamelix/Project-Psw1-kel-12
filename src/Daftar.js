@@ -16,7 +16,7 @@ const Daftar =() => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        localStorage.setItem("username" , username);
+        localStorage.setItem("email" , email);
         localStorage.setItem("password", password);
         alert("registrasi berhasil silahkan login");
         navigate('/Login');

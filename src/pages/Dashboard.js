@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CategoryFilter from './CategoryFilter';
 import CourseCard from './CourseCard';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -31,7 +32,7 @@ const Dashboard = () => {
       image: 'gmbr',
     },
     {
-      title: 'Ketimpangan Sosias Budaya Dalam Kehidupan Berekonomi Daerah',
+      title: 'Ketimpangan Sosial Budaya Dalam Kehidupan Berekonomi Daerah',
       category: 'Bab7',
       by: 'Sarjuna',
       learned: 3,
@@ -60,14 +61,28 @@ const Dashboard = () => {
       : courses.filter((c) => c.category === selectedCategory);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-xl font-bold mb-4">Continue Lesson</h1>
-      <CategoryFilter
-        categories={categories}
-        selected={selectedCategory}
-        onSelect={setSelectedCategory}
-      />
-      <div className="flex space-x-6 mt-6 overflow-x-auto no-scrollbar">
+    <div className="dashboard-container">
+      <h1>Continue Lesson</h1>
+
+      <div className="category-filter">
+        <button
+          className={selectedCategory === 'All' ? 'active' : ''}
+          onClick={() => setSelectedCategory('All')}
+        >
+          All
+        </button>
+        {categories.map((category) => (
+          <button
+            key={category.name}
+            className={selectedCategory === category.name ? 'active' : ''}
+            onClick={() => setSelectedCategory(category.name)}
+          >
+            {category.name}
+          </button>
+        ))}
+      </div>
+
+      <div className="card-container">
         {filteredCourses.map((course, index) => (
           <CourseCard key={index} {...course} />
         ))}

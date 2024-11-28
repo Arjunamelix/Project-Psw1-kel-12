@@ -31,7 +31,8 @@ const Navbar = () => {
                         <a href="/menubook">Materi</a>
                     </li>
                     <li><a href="/quiz">Latihan</a></li>
-                    <li><a href="#">Menu</a></li>
+                    <li><a href="/kalkulator">Kalkulator</a></li>
+                    <li><a href="/BankSoal2">Bank Soal</a></li>
                     <li><a href="#">Kontak</a></li>
                     <div className="auth-section">
                         <a href="/login" className="sign-in-link">Sign In</a>
