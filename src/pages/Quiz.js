@@ -125,6 +125,25 @@ const Quiz = () =>  {
             explanation:
                 "Energi kinetik dihitung dengan rumus 1/2 m v², di mana m adalah massa benda dan v adalah kecepatan benda.",
         },
+        {
+            question: "Apa yang dimaksud dengan hukum Newton pertama?",
+            options: ["A. Hukum Kelembaman", "B. Hukum Aksi dan Reaksi", "C. Hukum Grativasi", "D. Hukum Percepatan"],
+            answer: 0,
+            explanation:
+                "Sebuah benda akan tetap diam atau bergerak lurus beraturan kecuali ada gaya eksternal yang bekerja padanya,atau sama dengan Hukum Kelembaman.",
+        },
+        {
+            question: "Sebuah mobil mula-mula diam dan kemudian bergerak dengan percepatan konstan sebesar 2 m/s². Berapa jarak yang ditempuh mobil setelah 5 detik?",
+            options: ["A. 10 m", "B. 25 m", "C. 50 m", "D. 100 m"],
+            answer: 0,
+            explanation:
+                 " jarak yang ditempuh mobil adalah 50 m.",     
+       },
+
+       [
+        question:
+       ]
+        
     ];
 
     const question = useMemo(() => {
