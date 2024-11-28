@@ -341,7 +341,7 @@ I
                     seperti roda mobil, mesin turbin, dan permainan bola.
                 </p>
             </section>
-        </div>
+        </div>~
         </div>
     );
 };
