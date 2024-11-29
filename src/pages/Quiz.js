@@ -159,7 +159,67 @@ const Quiz = () =>  {
               answer: 0,
               explanation:
                 "Gunakan rumus kinematika: h = 0.5 × g × t². Dengan h = 20 m dan g = 10 m/s², maka t² = (2 × 20) / 10 = 4, sehingga t = √4 = 2 s. Jawaban yang benar adalah A.",
-        },  
+        },
+        {   
+               question: "Sebuah bola dilempar ke atas dengan kecepatan awal 15 m/s. Berapa waktu yang diperlukan bola untuk mencapai titik tertinggi? g = 10 m/s².",
+               options: ["A. 1,0 s", "B. 1,5 s", "C. 2,0 s", "D. 2,5 s"],
+              answer: 0,
+              explanation:
+                   "Gunakan rumus v = v₀ - g × t. Pada titik tertinggi, v = 0, sehingga t = v₀ / g = 15 / 10 = 1,5 s. Jawaban yang benar adalah B.",
+        },
+        {
+               question: "Sebuah gaya sebesar 50 N digunakan untuk mendorong sebuah benda sejauh 4 meter pada bidang datar. Berapa besar usaha yang dilakukan?",
+               options:  ["A. 100 J", "B. 150 J", "C. 200 J", "D. 250 J"],
+               answer: 0,
+               explanation:
+                      "Gunakan rumus usaha: W = F × s. Dengan F = 50 N dan s = 4 m, maka W = 50 × 4 = 200 J. Jawaban yang benar adalah C.",
+        },
+        {
+             question: "Berapa besar daya yang dihasilkan oleh sebuah mesin yang melakukan usaha 300 J dalam waktu 5 detik?",
+             options:  ["A. 50 W", "B. 60 W", "C. 75 W", "D. 100 W"],
+             answer: 0,
+             explanation:
+                    "Gunakan rumus daya: P = W / t. Dengan W = 300 J dan t = 5 s, maka P = 300 / 5 = 100 W. Jawaban yang benar adalah D.",
+        },
+        {
+              quetion: "Sebuah benda bermassa 2 kg bergerak melingkar dengan jari-jari lintasan 0,5 m dan kecepatan 4 m/s. Berapa besar gaya sentripetal yang bekerja pada benda?",
+              options:  ["A. 16 N", "B. 32 N", "C. 8 N", "D. 4 N"],
+              answer: 0,
+              explanation:
+                    "Gunakan rumus gaya sentripetal: F = m × v² / r. Dengan m = 2 kg, v = 4 m/s, dan r = 0,5 m, maka F = 2 × 4² / 0,5 = 32 N. Jawaban yang benar adalah B.",
+        },
+        {
+              question: "Sebuah muatan +2 μC dan +3 μC dipisahkan sejauh 0,2 meter. Berapa besar gaya listrik yang bekerja di antara kedua muatan? (k = 9 × 10⁹ Nm²/C²)",
+              options: ["A. 1,35 N", "B. 2,7 N", "C. 3,6 N", "D. 4,5 N"],
+              answer: 0,
+              explanation:
+              explanation:
+                  "Gunakan hukum Coulomb: F = k × |q₁ × q₂| / r². Dengan q₁ = 2 × 10⁻⁶ C, q₂ = 3 × 10⁻⁶ C, dan r = 0,2 m, maka F = 9 × 10⁹ × (2 × 10⁻⁶ × 3 × 10⁻⁶) / 0,2² = 3,6 N. Jawaban yang benar adalah C.",
+       },
+        {
+              question: "Berapa besar momentum sebuah benda bermassa 4 kg yang bergerak dengan kecepatan 5 m/s?",
+              options: ["A. 10 kg·m/s", "B. 15 kg·m/s", "C. 20 kg·m/s", "D. 25 kg·m/s"],
+              answer: 0,
+              explanation:
+                  "Gunakan rumus momentum: p = m × v. Dengan m = 4 kg dan v = 5 m/s, maka p = 4 × 5 = 20 kg·m/s. Jawaban yang benar adalah C.",
+          },
+          {
+               question: "Sebuah benda bermassa 5 kg digantung pada tali yang panjangnya 2 meter. Berapa periode ayunan sederhana jika benda tersebut digerakkan? (g = 10 m/s²)",
+               options: ["A. 2,83 s", "B. 3,14 s", "C. 1,26 s", "D. 2,0 s"],
+               answer: 0,
+               explanation:
+                     "Gunakan rumus periode ayunan: T = 2π × √(l / g). Dengan l = 2 m dan g = 10 m/s², maka T = 2π × √(2 / 10) ≈ 2,83 s. Jawaban yang benar adalah A.",
+          },
+        {
+              question: "Sebuah benda memiliki massa 10 kg dan percepatan gravitasi di tempat tersebut adalah 9,8 m/s². Berapa berat benda tersebut?",
+              options: ["A. 88 N", "B. 96 N", "C. 98 N", "D. 100 N"],
+              answer: 0,
+              explanation:
+        "Gunakan rumus berat: W = m × g. Dengan m = 10 kg dan g = 9,8 m/s², maka W = 10 × 9,8 = 98 N. Jawaban yang benar adalah C.",
+        },
+        
+
+
           
         
     ];
