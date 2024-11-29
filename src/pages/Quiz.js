@@ -139,6 +139,7 @@ const Quiz = () =>  {
             explanation:
                  " jarak yang ditempuh mobil adalah 50 m.",     
        },
+<<<<<<< HEAD
        {
             question: "Sebuah benda bermassa 4 kg ditarik dengan gaya 16 N pada bidang datar tanpa gesekan. Hitung percepatan benda tersebut.",
             options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
@@ -217,6 +218,8 @@ const Quiz = () =>  {
         "Gunakan rumus berat: W = m × g. Dengan m = 10 kg dan g = 9,8 m/s², maka W = 10 × 9,8 = 98 N. Jawaban yang benar adalah C.",
         },
             
+=======
+>>>>>>> cccf120b5567ceac5edf931ad0fce70bd24946e3
         
     ];
 
