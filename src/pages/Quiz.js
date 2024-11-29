@@ -193,7 +193,6 @@ const Quiz = () =>  {
               options: ["A. 1,35 N", "B. 2,7 N", "C. 3,6 N", "D. 4,5 N"],
               answer: 0,
               explanation:
-              explanation:
                   "Gunakan hukum Coulomb: F = k × |q₁ × q₂| / r². Dengan q₁ = 2 × 10⁻⁶ C, q₂ = 3 × 10⁻⁶ C, dan r = 0,2 m, maka F = 9 × 10⁹ × (2 × 10⁻⁶ × 3 × 10⁻⁶) / 0,2² = 3,6 N. Jawaban yang benar adalah C.",
        },
         {
@@ -217,10 +216,7 @@ const Quiz = () =>  {
               explanation:
         "Gunakan rumus berat: W = m × g. Dengan m = 10 kg dan g = 9,8 m/s², maka W = 10 × 9,8 = 98 N. Jawaban yang benar adalah C.",
         },
-        
-
-
-          
+            
         
     ];
 
