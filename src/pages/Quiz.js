@@ -139,10 +139,28 @@ const Quiz = () =>  {
             explanation:
                  " jarak yang ditempuh mobil adalah 50 m.",     
        },
-
-       [
-        question:
-       ]
+       {
+            question: "Sebuah benda bermassa 4 kg ditarik dengan gaya 16 N pada bidang datar tanpa gesekan. Hitung percepatan benda tersebut.",
+            options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
+            answer: 0,
+            explanation:
+                  "Gunakan hukum ll newton F=m.a, a=f/m=16/4=4m/s^2.",
+       },
+       {
+            question: "Sebuah benda bermassa 2 kg dipercepat oleh gaya sebesar 10 N pada bidang datar.Berapakah percepatan benda tersebut?.",
+            options: ["A. 5 M/S^2", "B. 10 m/s^2", "C. 2 m/s^2", "D. 4 m/s^2",],
+            answer: 0,
+            explanation:
+                  "Gunakan hukum II Newton: F = m.a. Dengan massa (m) = 2 kg dan gaya (F) = 10 N, maka percepatan (a) = F / m = 10 / 2 = 5 m/s^2. Jawaban yang benar adalah A. 5 m/s^2.",
+        },
+        {
+              question: "Sebuah benda di jatuhkan bebas dari ketinggian 20 meter.berapa waktu yang diperlukan benda untuk mencapai tanah? (g = 10m/s^2)",
+              options: ["A. 2 s", "B. 3 s", "C. 4 s", "D. 5 s"],
+              answer: 0,
+              explanation:
+                "Gunakan rumus kinematika: h = 0.5 × g × t². Dengan h = 20 m dan g = 10 m/s², maka t² = (2 × 20) / 10 = 4, sehingga t = √4 = 2 s. Jawaban yang benar adalah A.",
+        },  
+          
         
     ];
 
