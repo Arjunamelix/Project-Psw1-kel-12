@@ -99,6 +99,7 @@ const Quiz = () =>  {
     };
 
     const questionData = [
+    
         {
             question: "Hukum Newton I menyatakan bahwa ...",
             options: [
@@ -139,7 +140,6 @@ const Quiz = () =>  {
             explanation:
                  " jarak yang ditempuh mobil adalah 50 m.",     
        },
-<<<<<<< HEAD
        {
             question: "Sebuah benda bermassa 4 kg ditarik dengan gaya 16 N pada bidang datar tanpa gesekan. Hitung percepatan benda tersebut.",
             options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
@@ -215,12 +215,99 @@ const Quiz = () =>  {
               options: ["A. 88 N", "B. 96 N", "C. 98 N", "D. 100 N"],
               answer: 0,
               explanation:
-        "Gunakan rumus berat: W = m × g. Dengan m = 10 kg dan g = 9,8 m/s², maka W = 10 × 9,8 = 98 N. Jawaban yang benar adalah C.",
+                    "Gunakan rumus berat: W = m × g. Dengan m = 10 kg dan g = 9,8 m/s², maka W = 10 × 9,8 = 98 N. Jawaban yang benar adalah C.",
         },
-            
-=======
->>>>>>> cccf120b5567ceac5edf931ad0fce70bd24946e3
-        
+        {
+             question: "Sebuah benda bermassa 6 kg digerakkan oleh gaya sebesar 18 N pada bidang datar tanpa gesekan. Berapa percepatan benda tersebut?",
+             options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
+             answer: 0,
+             explanation:
+                 "Gunakan hukum II Newton: F = m × a. Dengan massa (m) = 6 kg dan gaya (F) = 18 N, maka percepatan (a) = F / m = 18 / 6 = 3 m/s². Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Sebuah bola bermassa 0,5 kg jatuh bebas dari ketinggian 20 m. Berapa energi kinetiknya sesaat sebelum menyentuh tanah? (g = 10 m/s²)",
+            options: ["A. 50 J", "B. 100 J", "C. 150 J", "D. 200 J"],
+            answer: 0,
+            explanation:
+                "Energi kinetik pada saat jatuh sepenuhnya berasal dari energi potensial: EK = EP = m × g × h. Dengan m = 0,5 kg, g = 10 m/s², dan h = 20 m, maka EK = 0,5 × 10 × 20 = 100 J. Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Sebuah pegas memiliki konstanta 200 N/m. Jika pegas direnggangkan sejauh 0,1 m, berapa energi potensial elastis yang tersimpan?",
+            options: ["A. 0,5 J", "B. 1 J", "C. 2 J", "D. 4 J"],
+            answer: 0,
+            explanation:
+                "Gunakan rumus energi potensial elastis: EP = 0,5 × k × x². Dengan k = 200 N/m dan x = 0,1 m, maka EP = 0,5 × 200 × (0,1)² = 1 J. Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Sebuah benda bermassa 3 kg bergerak melingkar dengan kecepatan 6 m/s pada lintasan berjari-jari 2 meter. Berapa gaya sentripetal yang bekerja pada benda?",
+            options: ["A. 36 N", "B. 54 N", "C. 72 N", "D. 81 N"],
+            answer: 0,
+            explanation:
+                "Gunakan rumus gaya sentripetal: F = m × v² / r. Dengan m = 3 kg, v = 6 m/s, dan r = 2 m, maka F = 3 × 6² / 2 = 54 N. Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Berapa panjang gelombang suara yang memiliki frekuensi 340 Hz jika cepat rambat suara di udara adalah 340 m/s?",
+            options: ["A. 0,5 m", "B. 1 m", "C. 1,5 m", "D. 2 m"],
+            answer: 0,
+            explanation:
+                "Gunakan rumus: λ = v / f. Dengan v = 340 m/s dan f = 340 Hz, maka λ = 340 / 340 = 1 m. Jawaban yang benar adalah B.",
+        },
+        {
+           question: "Sebuah mobil bermassa 1000 kg bergerak dengan kecepatan 20 m/s. Berapa energi kinetik mobil tersebut?",
+           options: ["A. 200.000 J", "B. 400.000 J", "C. 500.000 J", "D. 800.000 J"],
+           answer: 0,
+           explanation:
+               "Gunakan rumus energi kinetik: EK = 0,5 × m × v². Dengan m = 1000 kg dan v = 20 m/s, maka EK = 0,5 × 1000 × 20² = 400.000 J. Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Sebuah benda bermassa 2 kg diikat pada tali dan diayunkan dengan panjang tali 1 meter. Berapa percepatan sentripetalnya jika kecepatannya 4 m/s?",
+            options: ["A. 8 m/s²", "B. 10 m/s²", "C. 12 m/s²", "D. 16 m/s²"],
+            answer: 0,
+            explanation:
+                 "Gunakan rumus percepatan sentripetal: a = v² / r. Dengan v = 4 m/s dan r = 1 m, maka a = 4² / 1 = 16 m/s². Jawaban yang benar adalah D.",
+        },
+        {
+            question: "Dua bola masing-masing bermassa 1 kg dan 3 kg berada dalam keadaan diam dan bertabrakan secara elastis. Jika bola 1 bergerak dengan kecepatan 4 m/s setelah tumbukan, berapa kecepatan bola 2? (Sistem tertutup)",
+            options: ["A. 2 m/s", "B. 4 m/s", "C. 6 m/s", "D. 8 m/s"],
+            answer: 0,
+            explanation:
+                "Gunakan hukum kekekalan momentum: m₁v₁ + m₂v₂ = m₁v₁' + m₂v₂'. Dengan m₁ = 1 kg, m₂ = 3 kg, v₁ = 0, v₂ = 0, dan v₁' = 4 m/s, maka 0 = (1 × 4) + (3 × v₂'). Jadi v₂' = -4 / 3 = 4 m/s (dalam arah sebaliknya). Jawaban yang benar adalah B.", 
+        },
+        {
+            question: "Sebuah benda bermassa 4 kg dipanaskan hingga menyerap energi sebesar 8000 J. Jika kalor jenis benda tersebut adalah 2000 J/kg·°C, berapa kenaikan suhunya?",
+            options: ["A. 1°C", "B. 2°C", "C. 3°C", "D. 4°C"],
+            answer: 0,
+            explanation:
+                "Gunakan rumus Q = m × c × ΔT. Dengan Q = 8000 J, m = 4 kg, dan c = 2000 J/kg·°C, maka ΔT = Q / (m × c) = 8000 / (4 × 2000) = 2°C. Jawaban yang benar adalah B.",
+        },
+        {
+            question: "Sebuah benda bermassa 2 kg digerakkan ke atas dengan gaya 50 N selama 3 detik. Jika percepatan gravitasi adalah 10 m/s², berapa besar usaha yang dilakukan gaya tersebut?",
+            options: ["A. 150 J", "B. 300 J", "C. 450 J", "D. 600 J"],
+            answer: 0,
+            explanation:
+                "Usaha dilakukan oleh gaya total. Gaya total = 50 N - (m × g) = 50 - (2 × 10) = 30 N. Usaha = F × s. Karena s = v × t = (a × t²) / 2, percepatan = 30/2 = 15 m/s². Maka usaha = 600 J. Jawaban adalah D.",
+        },
+        {
+            question: "Sebuah benda bermassa 10 kg berada dalam keadaan diam. Jika sebuah gaya sebesar 40 N bekerja pada benda selama 5 detik, berapa kecepatan akhirnya?",
+            options: ["A. 10 m/s", "B. 15 m/s", "C. 20 m/s", "D. 25 m/s"],
+            answer: 0,
+            explanation:
+                 "Gunakan rumus impuls: F × t = m × Δv. Dengan F = 40 N, t = 5 s, dan m = 10 kg, maka Δv = (F × t) / m = (40 × 5) / 10 = 20 m/s. Jawaban yang benar adalah C.",
+        },
+        {
+            question: "Berapa besar energi mekanik sebuah benda bermassa 2 kg yang berada di ketinggian 5 meter dengan kecepatan 3 m/s? (g = 10 m/s²)",
+            options: ["A. 40 J", "B. 55 J", "C. 70 J", "D. 85 J"],
+            answer: 0,
+            explanation:
+                "Energi mekanik adalah penjumlahan energi kinetik (EK) dan energi potensial (EP). EK = 0,5 × m × v² = 0,5 × 2 × 3² = 9 J. EP = m × g × h = 2 × 10 × 5 = 100 J. Total energi mekanik = 9 + 100 = 109 J. Jawaban adalah B.",
+        },
+        {
+            question: "Sebuah resistor memiliki hambatan 10 ohm, dan arus sebesar 2 A mengalir melaluinya. Berapa besar tegangan pada resistor tersebut?",
+            options: ["A. 10 V", "B. 15 V", "C. 20 V", "D. 25 V"],
+            answer: 0,
+            explanation:
+                "Gunakan hukum Ohm: V = I × R. Dengan I = 2 A dan R = 10 ohm, maka V = 2 × 10 = 20 V. Jawaban yang benar adalah C.",
+        },
     ];
 
     const question = useMemo(() => {
