@@ -21,7 +21,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 2,
       total: 12,
-      image: 'gmbr',
+      image: 'https://via.placeholder.com/300x150', // Tambahkan placeholder gambar
     },
     {
       title: 'Teori Kinetik',
@@ -29,7 +29,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 2,
       total: 8,
-      image: 'gmbr',
+      image: 'https://via.placeholder.com/300x150',
     },
     {
       title: 'Ketimpangan Sosial Budaya Dalam Kehidupan Berekonomi Daerah',
@@ -37,7 +37,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 3,
       total: 8,
-      image: 'gmbr',
+      image: 'https://via.placeholder.com/300x150',
     },
     {
       title: 'Cara menghadapi stress di lingkungan kerja',
