@@ -152,7 +152,134 @@ const Modul7 = () => {
                     Contoh gelombang mekanin meliputi gelombang bunyi, gelombang air, dan gelombang pada tali.
                 </p>
             </section>
-            <section>
+            <section className="card">
+                <strong>Jenis-jenis Gelombang</strong>
+                <p>Berdasarkam medium untuk merambatnya gelobang dibedakan menjadi dua yaitu 
+                   gelombang mekanik dan gelombang elektromagnetik. Gelombang yang memerlukan 
+                   medium untuk merambat disebut gelombang mekanik. Contoh : gelombang bunyi, 
+                   gelombang air.  Gelombang yang tidak memerlukan medium untuk merambat disebut 
+                   gelombang elektromagnetik. Contoh : gelombang cahaya, sinar X, gelombang radio.</p>
+                <p>Berdasarkan arah getarannya, gelombang  dibedakan menjadi dua, yaitu : </p>
+                <p>1. gelombang transversal</p>
+                <p>2. gelombang longitunidinal</p>
+
+                <p>Berdasarkan Amplitudonya, gelombang terbagi menjadi : </p>
+                <p>1. gelombang berjalan </p>
+                <p>2. gelombang stasioner (gelombang berdiri) </p>
+
+                <p>Berdasarkan medium perambatannya, gelombang terbagi menjadi : </p>
+                <p>1. gelombang mekanis </p>
+                <p>2. gelombang elektromagnetis </p>
+
+                <strong>Gelombang Transversal </strong>
+                <p>Yaitu gelombang yang arah getarannya tegak lurus dengan arah perambatannya. 
+                   Contoh : gelombang tali yang diusik. </p>
+                <img 
+                     src="modul7.png"
+                     style={{width: "300px", height: "150px", margin: "5px"}}
+                />
+                <p>Pada gelombang transversal mempunyai bagian dan besaran berikut : </p>
+                <p>▪ puncak gelombang, yaitu titik tertinggi pada gelombang</p>
+                <p>▪ dasar gelombang, yaitu titik terendah pada gelombang</p>
+                <p>▪ bukit gelombang </p>
+                <p>▪ lembah gelombang </p>
+                <p>▪ amplitudo gelombang, yaitu simpangan terbesar gelombang/tinggi puncak gelombang. </p>
+                <p>▪ panjang gelombang, yaitu jarak antara dua puncak gelombang yang berturutan atau jarak antara dua dasar gelombang yang berurutan. Jadi sebuah gelombang 
+                     terdiri dari sebuah bukit dan sebuah lembang gelombang. </p>
+                <p>▪ periode gelombang, yaitu waktu untuk menempuh 1 buah panjang gelombang. </p>
+                <p>▪ Frekuensi gelombang, yaitu banyaknya gelombang yang terjadi tiap detik. </p>
+
+                <strong>Gelombang Longitudinal </strong>
+                <p>Yaitu gelombang yang arah getarannya searah dengan arah rambatnya. Contoh : 
+                   gelombang pegas atau slinki. </p>
+                <img 
+                     src="modul7.1.png"
+                     style={{width: "200px", height: "100px", margin: "5px"}}
+                />
+                <p>Pada gelombang longitudinal, terdiri dari rapat dan renggangan. Satu panjang 
+                   gelombang adalah jarak antara rapatan dengan rapatan yang berurutan, atau jarak 
+                   antara renggangan dengan renggangan yang berurutan.</p>
+                <strong>Besaran-besaran Pada Gelombang </strong>
+                <p>1. Amplitudo (A) </p>
+                <p>Amplitudo adalah simpangan maksimum gelombang yang memiliki satuan meter (m). </p>
+                <p>2. Panjang gelombang (λ) </p>
+                <p>Jika ditinjau dari gelombang transversal, panjang gelombang adalah jarak antara dua 
+                   puncak yang berdekatan atau jarak antara dua lembah yang berdekatan. Pada 
+                   gelombang longitudinal, panjang gelombang adalah jarak antara pusat rapatan ke 
+                   rapatan berikutya  atau pusat regangan ke pusat regangan berikutnya.</p>
+                <p>3. Frekuensi gelombang (f) </p>
+                <p>Frekuensi adalah banyaknya gelombang yang bisa terbentuk setiap detik. Secara 
+                   matematis, frekuensi dirumuskan sebagai berikut. </p>
+                <img 
+                     src="modul7.2.png"
+                     style={{width: "50px", height: "40px", margin: "5px"}}
+                />
+                <p> Keterangan: </p>
+                <p>f = frekuensi gelombang (Hz); </p>
+                <p>n = jumlah gelombang yang terbentuk;</p>
+                <p>t = waktu tempuh gelombang (s).</p>
+                
+                <p>4. Periode gelombang (T) </p>
+                <p>Periode adalah waktu yang dibutuhkan gelombang untuk menempuh satu panjang gelombangnya. Periode juga bisa didefinisikan sebagai waktu yang dibutuhkan 
+                   gelombang untuk melakukan satu kali putaran. Secara matematis, periode dirumuskan sebagai berikut. </p>
+                <img 
+                     src="modul7.3.png"
+                     style={{width: "170px", height: "40px", margin: "5px"}}
+                />
+                <p>Keterangan: </p>
+                <p>f = frekuensi gelombang (Hz); </p>
+                <p>T = periode (s); </p>
+                <p>n = jumlah gelombang yang terbentuk; dan</p>
+                <p>t = waktu tempuh gelombang (s).</p>
+
+                <p>5. Kecepatan Rambat Gelombang</p>
+                <p>Kecepatan rambat gelombang pada suatu medium dihitung dengan : </p>
+                <img 
+                     src="modul7.4.png"
+                     style={{width: "300px", height: "150px", margin: "5px"}}
+                />
+                <p>6. Fase dan beda fase Gelombang</p>
+                <p>Fase gelombang  adalah keadaan gelombang yang berkaitan dengan simpangan dan 
+                   arah rambatnya.  Secara matematis fase gelombang dinyatakan sebagai berikut :   </p>
+                <img 
+                     src="modul7.5.png"
+                     style={{width: "500px", height: "160px", margin: "5px"}}
+                />
+                <p>Sedangkan beda fase adalah  apabila pada tali terdapat dua buah titik, maka beda 
+                   fasenya adalah jarak antara dua titik tersebut. Persamaan beda fase gelombang adalah 
+                   sebagai berikut.:  </p>
+                <img 
+                     src="modul7.6.png"
+                     style={{width: "300px", height: "70px", margin: "5px"}}
+                />
+                <p>7. Energi dan Intensitas Gelombang </p>
+                <p>Gelombang memindahkan energi dari satu tempat ke tempat lain. Gelombang 
+                   merupakan getaran yang merambat dalam suatu medium. Energi getaran merambat 
+                   dari satu partikel ke partikel lain sepanjang medium, walaupun partikelnya sendiri 
+                   tidak berpindah. Besarnya energi gelombang adalah :</p>
+                <img 
+                     src="modul7.7.png"
+                     style={{width: "200px", height: "170px", margin: "5px"}}
+                />
+                <p>EK = energi kinetik (J) </p>
+                <p>EP = energi potensial (J) </p>
+                <p>E = energi mekanik / energi total (Joule) </p>
+                <p>θ = sudut fase gelombang</p>
+                <p>k = m.ω2 =  konstanta (N/m) </p>
+                <p>m = massa (kg) </p>
+                <p>ω = 2.π.f = frekuensi sudut = kecepatan sudut (rad/s) </p>
+                <p>f = 1/T = frekuensi gelombang (Hz) </p>
+                <p>T = periode gelombang (s) </p>
+                <p>A = amplitudo gelombang (m)</p>
+                <p>Besarnya energi  gelombang yang dipindahkan per satuan luas per satuan waktu 
+                   disebut intensitas gelombang. Besarnya intensitas gelombang bunyi adalah : </p>
+                <p>I = intensitas bunyi (J/m2.s = Watt/m2) </p>
+                <p>t = waktu (s)</p>
+                <p>P = daya bunyi (watt)</p>
+                <p>A = 4.π.r2 = luas penampang medium (m2)</p>
+                <p>r = jarak (m)</p>
+            </section>
+            <section className="card">
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
