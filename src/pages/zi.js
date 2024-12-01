@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './zi.css';
 
 const ComponentName = () => {
+    const navigate = useNavigate();
+
+    const handleButtonClick = () => {
+        navigate('/MenuBook');
+    };
+
     return (
         <div className="main-container">
             <section className="hero-section">
@@ -14,7 +21,7 @@ const ComponentName = () => {
                                 <input type="search" placeholder='Cari "Materi"' className="search-input" required />
                                 <button type="submit" className="submit-button">Telusuri</button>
                             </form>
-                            <a href="#materi" className="cta-button">Mulai Belajar</a>
+                            <button onClick={handleButtonClick} className="cta-button">Mulai Belajar</button>
                         </div>
                     </div>
                 </div>
