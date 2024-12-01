@@ -152,6 +152,86 @@ const Modul6 = () => {
                     Gas dianggap terdiri dari partikel kecil yang bergerak secara acak dan terus-menerus.
                 </p>
             </section>
+            <section className="card">
+                <strong>Pengertian Gas Ideal </strong>
+                <p>Gas ideal adalah gas yang secara tepat memenuhi persamaan pV = nRT. Sebagai 
+                   gambaran tentang keadaan gas ideal, kita tinjau sifat-sifat gas ideal diantaranya 
+                   adalah: 
+                </p>
+                <p>1. Gas ideal terdiri dari partikel-partikel yang amat besar jumlahnya, yang tersebar 
+                   merata di seluruh bagian jumlahnya, dan bergerak secara acak ke segala arah 
+                   dengan kelajuan tetap
+                </p>
+                <p>2. Jarak antara partikel gas jauh lebih besar dari dibanding ukuran partikel
+                </p>
+                <p>3. tidak ada gaya di antara partikel-partikel tersebut kecuali jika bertumbukan 
+                   (tumbukan dianggap lenting sempurna dan partikel dianggap bulat, licin, dan pejal), 
+                   dan berlangsung sangat singkat</p>
+                <p>4. Volume partikel gas sangat kecil dibandingkan dengan wadah yang ditempatinya 
+                   sehingga ukurannya dapat diabaikan </p>
+                <p>5. Hukum Newton tentang gerak berlaku</p>
+
+                <strong>Persamaan Keadaan Gas Ideal </strong>
+                <p>Hukum Boyle-Gay Lussac berlaku untuk gas ideal di dalam ruang tertutup, 
+                   persamaannya dapat dituliskan sebagai berikut  :  </p>
+                <img 
+                     src="modul6.png"
+                     style={{width: "300px", height: "70px", margin: "5px"}}
+                />
+                <img 
+                     src="modul6.1.png"
+                     style={{width: "200px", height: "40px", margin: "5px"}}
+                />
+                <p>Maka : </p>
+                <p>Persamaan PV = nRT dapat dinyatakan sebagai berikut, </p>
+                <img 
+                     src="modul6.2.png"
+                     style={{width: "160px", height: "70px", margin: "5px"}}
+                />
+                <img 
+                     src="modul6.3.png"
+                     style={{width: "100px", height: "50px", margin: "5px"}}
+                />
+                <p>Dari persamaan PV = nRT , dengan mensubstitusikan n = m/M , persamaan keadaan  gas ideal menjadi :</p>
+                <img 
+                     src="modul6.4.png"
+                     style={{width: "160px", height: "70px", margin: "5px"}}
+                />
+                <strong> Keterangan : </strong>                           
+                <p>m = massa total gas (kg) </p>                          
+                <p>M = massa molekul gas (kg/kmol = gr/mol) </p>
+                <p>Na = bilangan Avogadro (6,02 x 1023 partikel/mol)</p>
+                <p>P1 = tekanan gas mula-mula (Pa = N/m2)  </p>
+                <p>P2 = tekanan gas akhir </p>
+                <p>V1 = volume gas mula-mula (m3)  </p>
+                <p>T1 = suhu gas mula-mula (K) </p>
+                <p>R = tetap umum gas = tetapan molar gas
+                     = 8314 J/kmolK = 8,314 J/molK = 0,082 liter.atm/molK</p>
+                <p>N = banyak partikel </p>
+                <p>n = jumlah mol (mol)</p>
+                <p>P = tekanan gas ideal (Pa) </p>
+                <p>V = volume gas (m3)</p>
+                <p>V2 = volume gas akhir </p>
+                <p>T2 = suhu gas akhir (K) </p>
+                <p>ρ = massa jenis gas (kg/m3) </p>
+
+                <strong>Tekanan Gas Ideal</strong>
+                <p>Berdasarkan teori kinetik, molekul-molekul gas ideal bergerak secara acak sesuai 
+                   Hukum Gerak Newton dan bertumbukan dengan molekul lain maupun dengan dinding 
+                   bejana tempat gas berada secara elastis sempurna.  
+                </p>
+                <img 
+                     src="modul6.5.png"
+                     style={{width: "200px", height: "60px", margin: "5px"}}
+                />
+                <p>P = tekanan gas (Pa) </p>
+                <p>2 v = kuadrat kelajuan rata-rata molekul gas</p>
+                <p>N/V = kerapatan partikel,  </p>
+                <p>N = jumlah molekul (partikel),  </p>
+                <p>V = volume wadah </p>
+                <p>ρ = massa jenis (kg m-3)  </p>
+                <p>m0= massa satu molekul gas (kg),  </p>
+            </section>
             <section>
                 <h2>Konsep Dasar</h2>
                 <ul>

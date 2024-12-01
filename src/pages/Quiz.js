@@ -308,6 +308,270 @@ const Quiz = () =>  {
             explanation:
                 "Gunakan hukum Ohm: V = I × R. Dengan I = 2 A dan R = 10 ohm, maka V = 2 × 10 = 20 V. Jawaban yang benar adalah C.",
         },
+        {
+            question: "Energi kinetik suatu benda dihitung dengan rumus ...",
+            options: [
+                "A. 1/2 m v²",
+                "B. m g h",
+                "C. 1/2 k x²",
+                "D. m a s",
+            ],
+            answer: 0,
+            explanation: 
+                "Energi kinetik dihitung dengan rumus 1/2 m v², di mana m adalah massa benda dan v adalah kecepatan benda.",
+        },
+        {
+            question: "Hukum Newton III menyatakan bahwa ...",
+            options: [
+                "A. Benda tetap diam jika tidak ada gaya yang bekerja",
+                "B. Gaya berbanding lurus dengan percepatan",
+                "C. Setiap aksi memiliki reaksi yang sama besar dan berlawanan arah",
+                "D. Momentum benda selalu konstan",
+            ],
+            answer: 2,
+            explanation: 
+                "Hukum Newton III menyatakan bahwa untuk setiap aksi terdapat reaksi yang sama besar tetapi berlawanan arah.",
+        },
+        {
+            question: "Rumus gaya pada sebuah benda adalah ...",
+            options: [
+                "A. F = m x a",
+                "B. F = m x v",
+                "C. F = m x g",
+                "D. F = m x h",
+            ],
+            answer: 0,
+            explanation: 
+                "Rumus gaya berdasarkan hukum Newton II adalah F = m x a, di mana F adalah gaya, m adalah massa, dan a adalah percepatan.",
+        },
+        {
+            question: "Besaran yang termasuk dalam kelompok besaran pokok adalah ...",
+            options: [
+                "A. Waktu, panjang, massa",
+                "B. Kecepatan, massa, panjang",
+                "C. Massa, percepatan, waktu",
+                "D. Momentum, panjang, waktu",
+            ],
+            answer: 0,
+            explanation: 
+                "Besaran pokok meliputi waktu, panjang, massa, arus listrik, suhu, intensitas cahaya, dan jumlah zat.",
+        },
+        {
+            question: "Energi potensial gravitasi dihitung dengan rumus ...",
+            options: [
+                "A. E = m x g x h",
+                "B. E = 1/2 m v²",
+                "C. E = k x²",
+                "D. E = m x a x h",
+            ],
+            answer: 0,
+            explanation: 
+                "Energi potensial gravitasi dihitung dengan rumus E = m x g x h, di mana m adalah massa, g adalah percepatan gravitasi, dan h adalah ketinggian.",
+        },
+        {
+            question: "Kecepatan sebuah benda yang bergerak lurus dihitung dengan rumus ...",
+            options: [
+                "A. v = s / t",
+                "B. v = a x t",
+                "C. v = m x g",
+                "D. v = F / m",
+            ],
+            answer: 0,
+            explanation: 
+                "Kecepatan benda yang bergerak lurus dihitung dengan rumus v = s / t, di mana s adalah jarak dan t adalah waktu.",
+        },
+        {
+            question: "Satuan SI untuk arus listrik adalah ...",
+            options: [
+                "A. Volt",
+                "B. Ampere",
+                "C. Ohm",
+                "D. Watt",
+            ],
+            answer: 1,
+            explanation: 
+                "Satuan SI untuk arus listrik adalah Ampere (A).",
+        },
+        {
+            question: "Dalam hukum Pascal, tekanan pada fluida ...",
+            options: [
+                "A. Berbeda di setiap titik",
+                "B. Sama besar ke segala arah",
+                "C. Bergantung pada massa benda",
+                "D. Hanya bekerja ke bawah",
+            ],
+            answer: 1,
+            explanation: 
+                "Hukum Pascal menyatakan bahwa tekanan yang diberikan pada fluida dalam wadah tertutup diteruskan sama besar ke segala arah.",
+        },
+        {
+             question: "Rumus tekanan dalam fisika adalah ...",
+             options: [
+            "A. P = F / A",
+            "B. P = F x A",
+            "C. P = m x a",
+            "D. P = m / V",
+            ],
+            answer: 0,
+             explanation: 
+                  "Tekanan dihitung dengan rumus P = F / A, di mana P adalah tekanan, F adalah gaya, dan A adalah luas permukaan.",
+    },
+    {
+        question: "Sebuah benda bermassa 2 kg bergerak dengan kecepatan 3 m/s. Energi kinetiknya adalah ...",
+        options: [
+            "A. 3 Joule",
+            "B. 6 Joule",
+            "C. 9 Joule",
+            "D. 18 Joule",
+        ],
+        answer: 3,
+        explanation: 
+            "Energi kinetik dihitung dengan rumus 1/2 m v². Dalam kasus ini, 1/2 x 2 x (3)² = 18 Joule.",
+    },
+    {
+        question: "Hasil kali massa dan kecepatan disebut ...",
+        options: [
+            "A. Momentum",
+            "B. Gaya",
+            "C. Energi kinetik",
+            "D. Daya",
+        ],
+        answer: 0,
+        explanation: 
+            "Hasil kali massa dan kecepatan disebut momentum, yang dinyatakan dengan p = m x v.",
+    },
+    {
+        question: "Benda yang memiliki massa besar memerlukan ... untuk mempercepat geraknya.",
+        options: [
+            "A. Gaya yang lebih kecil",
+            "B. Gaya yang lebih besar",
+            "C. Percepatan yang lebih kecil",
+            "D. Energi yang lebih kecil",
+        ],
+        answer: 1,
+        explanation:
+            "Menurut hukum Newton II, gaya yang dibutuhkan untuk mempercepat benda berbanding lurus dengan massa. Benda yang lebih besar memerlukan gaya yang lebih besar untuk mempercepatnya.",
+    },
+    {
+        question: "Perubahan energi dari energi potensial menjadi energi kinetik terjadi pada ...",
+        options: [
+            "A. Benda diam",
+            "B. Benda yang jatuh bebas",
+            "C. Benda yang diputar",
+            "D. Benda dalam keadaan setimbang",
+        ],
+        answer: 1,
+        explanation:
+            "Ketika benda jatuh bebas, energi potensialnya berkurang sementara energi kinetiknya bertambah sesuai hukum kekekalan energi.",
+    },
+    {
+        question: "Gelombang bunyi termasuk gelombang ...",
+        options: [
+            "A. Elektromagnetik",
+            "B. Longitudinal",
+            "C. Transversal",
+            "D. Stasioner",
+        ],
+        answer: 1,
+        explanation:
+            "Gelombang bunyi termasuk gelombang longitudinal, di mana partikel medium berosilasi sejajar dengan arah perambatan gelombang.",
+    },
+    {
+        question: "Hukum Archimedes menyatakan bahwa ...",
+        options: [
+            "A. Benda yang terapung memiliki massa jenis yang lebih kecil dari fluida",
+            "B. Benda akan selalu tenggelam dalam fluida",
+            "C. Tekanan fluida selalu sebanding dengan gaya angkat",
+            "D. Benda dalam fluida dipengaruhi gaya angkat sebesar berat fluida yang dipindahkan",
+        ],
+        answer: 3,
+        explanation:
+            "Hukum Archimedes menyatakan bahwa gaya angkat ke atas pada benda dalam fluida sama dengan berat fluida yang dipindahkan.",
+    },
+    {
+        question: "Momentum sudut suatu benda dapat dihitung dengan rumus ...",
+        options: [
+            "A. L = r x p",
+            "B. L = m x v",
+            "C. L = I x ω",
+            "D. L = F x d",
+        ],
+        answer: 2,
+        explanation:
+            "Momentum sudut dihitung dengan L = I x ω, di mana I adalah momen inersia dan ω adalah kecepatan sudut.",
+    },
+    {
+        question: "Sebuah cermin cekung memiliki fokus sejauh 10 cm. Jarak fokusnya adalah ...",
+        options: [
+            "A. 10 cm",
+            "B. 5 cm",
+            "C. 20 cm",
+            "D. 15 cm",
+        ],
+        answer: 0,
+        explanation:
+            "Jarak fokus cermin cekung adalah setengah dari jari-jari kelengkungan cermin. Dalam soal ini, fokus sudah diberikan sebagai 10 cm.",
+    },
+    {
+        question: "Hasil kali gaya dan perpindahan disebut ...",
+        options: [
+            "A. Daya",
+            "B. Usaha",
+            "C. Energi",
+            "D. Momentum",
+        ],
+        answer: 1,
+        explanation:
+            "Hasil kali gaya dan perpindahan disebut usaha, dengan rumus W = F x d x cos(θ).",
+    },
+    {
+        question: "Hasil kali gaya dan perpindahan disebut ...",
+        options: [
+            "A. Daya",
+            "B. Usaha",
+            "C. Energi",
+            "D. Momentum",
+        ],
+        answer: 1,
+        explanation:
+            "Hasil kali gaya dan perpindahan disebut usaha, dengan rumus W = F x d x cos(θ).",
+    },
+    {
+        question: "Frekuensi suatu gelombang dapat dihitung dengan rumus ...",
+        options: [
+            "A. f = v / λ",
+            "B. f = T / v",
+            "C. f = 1 / T",
+            "D. f = λ / v",
+        ],
+        answer: 2,
+        explanation:
+            "Frekuensi suatu gelombang dihitung dengan f = 1 / T, di mana T adalah periode gelombang.",
+    },
+    {
+        question: "Satuan SI untuk daya adalah ...",
+        options: [
+            "A. Joule",
+            "B. Watt",
+            "C. Newton",
+            "D. Pascal",
+        ],
+        answer: 1,
+        explanation:
+            "Satuan SI untuk daya adalah Watt (W), yang menunjukkan energi yang digunakan per satuan waktu.",
+    },
+    {
+        question: "Gaya sentripetal selalu bekerja ...",
+        options: [
+            "A. Menjauh dari pusat lingkaran",
+            "B. Sejajar dengan arah gerak benda",
+            "C. Menuju pusat lingkaran",
+            "D. Tegak lurus ke arah gravitasi",
+        ],
+        answer: 2,
+        explanation:
+            "Gaya sentripetal selalu bekerja menuju pusat lingkaran untuk menjaga benda tetap bergerak dalam lintasan melingkar.",
+    },
     ];
 
     const question = useMemo(() => {
