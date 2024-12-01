@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import CategoryFilter from './CategoryFilter';
+import { useNavigate } from 'react-router-dom';
 import CourseCard from './CourseCard';
 import './Dashboard.css';
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const navigate = useNavigate();
 
   const categories = [
     { name: 'Bab5', learned: 2, total: 8 },
@@ -21,38 +22,45 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 2,
       total: 12,
-      image: 'https://via.placeholder.com/300x150', // Tambahkan placeholder gambar
+      image: 'https://via.placeholder.com/300x150',
+      url: '/Modul9',
     },
     {
-      title: 'Teori Kinetik',
+      title: 'Teori Kinetik Gas',
       category: 'Bab6',
       by: 'Sarjuna',
       learned: 2,
       total: 8,
       image: 'https://via.placeholder.com/300x150',
+      url: '/Modul6',
     },
     {
-      title: 'Ketimpangan Sosial Budaya Dalam Kehidupan Berekonomi Daerah',
+      title: 'Fluida Statis',
       category: 'Bab7',
       by: 'Sarjuna',
       learned: 3,
       total: 8,
       image: 'https://via.placeholder.com/300x150',
+      url: '/modul3',
     },
     {
-      title: 'Cara menghadapi stress di lingkungan kerja',
+      title: 'Karakteristik Gelombang Mekanik',
       category: 'Bab8',
       by: 'Sarjuna',
       learned: 4,
       total: 6,
+      image: 'https://via.placeholder.com/300x150',
+      url: '/Modul7',
     },
     {
-      title: 'Metode pengembangbiakan Singa Florida',
+      title: 'Pemanasan Global',
       category: 'Bab9',
       by: 'Sarjuna',
       learned: 9,
       total: 16,
-    }
+      image: 'https://via.placeholder.com/300x150',
+      url: '/Modul10',
+    },
   ];
 
   const filteredCourses =
@@ -84,7 +92,11 @@ const Dashboard = () => {
 
       <div className="card-container">
         {filteredCourses.map((course, index) => (
-          <CourseCard key={index} {...course} />
+          <CourseCard
+            key={index}
+            {...course}
+            onClick={() => navigate(course.url)}
+          />
         ))}
       </div>
     </div>

@@ -1,21 +1,17 @@
 import React from 'react';
 import './Card.css';
 
-const CourseCard = ({ image, title, category, by, learned, total, categoryColor }) => {
+const CourseCard = ({ title, category, by, learned, total, image, onClick }) => {
   return (
-    <div className="course-card">
-      <div className="image-container">
-        <img
-          src={image || 'https://via.placeholder.com/300x150'}
-          alt={title}
-        />
-      </div>
-      <div className="title-container">
+    <div className="course-card" onClick={onClick} style={{ cursor: 'pointer' }}>
+      <img src={image} alt={title} className="course-card-image" />
+      <div className="course-card-content">
         <h3>{title}</h3>
-      </div>
-      <div className="info-container">
-        <p className="info">By: {by}</p>
-        <p className="learned-info">Learned: {learned}/{total}</p>
+        <p>{category}</p>
+        <p>By: {by}</p>
+        <p>
+          Progress: {learned}/{total}
+        </p>
       </div>
     </div>
   );

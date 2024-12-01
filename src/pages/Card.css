@@ -2,7 +2,6 @@
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  padding: 16px;
   background-color: #1E3A8A;
 }
 
@@ -99,23 +98,4 @@
 
 .card-container::-webkit-scrollbar-track {
   background-color: #f1f1f1;
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column; /* Menumpuk secara vertikal */
-    align-items: center; /* Rata tengah */
-  }
-
-  .course-card {
-    width: 90%; /* Sesuaikan ukuran card dengan layar */
-  }
-
-  .image-container img {
-    height: auto; /* Menyesuaikan tinggi gambar */
-  }
-
-  .info-container {
-    font-size: 0.875rem; /* Sedikit kecilkan teks untuk layar kecil */
-  }
 }
