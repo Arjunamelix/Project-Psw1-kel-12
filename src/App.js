@@ -17,7 +17,7 @@ import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
-import Kalkulator from "./pages/Kalkulator";
+
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
@@ -28,28 +28,29 @@ const App = () => {
 
   return (
     <Router>
-      <div>
-        <h1></h1>
-        <Routes>
-          <Route path="/" element={<Navigate to="/menuhome" replace />} />
-          <Route path="/daftar" element={<Daftar />} /> {/* Perbaiki eAlement menjadi element */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/menuhome" element={<MenuHome />} />
-          <Route path="/modul1" element={<Modul1 />} />
-          <Route path="/modul2" element={<Modul2 />} />
-          <Route path="/modul3" element={<Modul3 />} />
-          <Route path="/modul4" element={<Modul4 />} />
-          <Route path="/modul5" element={<Modul5 />} />
-          <Route path="/modul6" element={<Modul6 />} />
-          <Route path="/modul7" element={<Modul7 />} />
-          <Route path="/modul8" element={<Modul8 />} />
-          <Route path="/modul9" element={<Modul9 />} />
-          <Route path="/modul10" element={<Modul10 />} />
-          <Route path="/menubook" element={<MenuBook />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/kalkulator" element={<Kalkulator />} />
-        </Routes>
-      </div>
+    <div>
+      <h1></h1>
+      <Routes>
+        <Route path="/" element={<Navigate to="/menuhome" replace />} />
+      <Route path="/daftar" element={<Daftar />}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/menuhome" element={<MenuHome/>}/>
+      <Route path="/modul1" element={<Modul1/>}/>
+      <Route path="/modul2" element={<Modul2/>}/>
+      <Route path="/modul3" element={<Modul3/>}/>
+      <Route path="/modul4" element={<Modul4/>}/>
+      <Route path="/modul5" element={<Modul5/>}/>
+      <Route path="/modul6" element={<Modul6/>}/>
+      <Route path="/modul7" element={<Modul7/>}/>
+      <Route path="/modul8" element={<Modul8/>}/>
+      <Route path="/modul9" element={<Modul9/>}/>
+      <Route path="/modul10" element={<Modul10/>}/>
+      <Route path="/menubook" element={<MenuBook/>}/>
+      <Route path="/quiz" element={<Quiz/>}/>
+     
+
+    </Routes>
+    </div>
     </Router>
   );
 };
