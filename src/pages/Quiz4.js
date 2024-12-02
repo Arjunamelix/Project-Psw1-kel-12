@@ -2,7 +2,7 @@ import React, { useState, useEffect,  useMemo } from "react";
 import Navbar from "../components/Header";
 import {useNavigate} from "react-router-dom";
 
-const Quiz = () =>  {
+const Quiz4 = () =>  {
     const styles = {
         container: {
             padding: "20px",
@@ -101,81 +101,125 @@ const Quiz = () =>  {
     const questionData = [
     
         {
-            question: "Hukum Newton I menyatakan bahwa ...",
+            question: "Hukum Newton III menyatakan bahwa ...",
             options: [
-                "A. Benda tetap diam atau bergerak lurus beraturan jika tidak ada gaya yang bekerja",
+                "A. Benda tetap diam jika tidak ada gaya yang bekerja",
                 "B. Gaya berbanding lurus dengan percepatan",
                 "C. Setiap aksi memiliki reaksi yang sama besar dan berlawanan arah",
                 "D. Momentum benda selalu konstan",
             ],
             answer: 2,
-            explanation:
-                "Hukum Newton I atau hukum kelembaman menyatakan bahwa sebuah benda akan tetap diam atau bergerak lurus beraturan kecuali ada gaya total yang bekerja pada benda tersebut.",
+            explanation: 
+                "Hukum Newton III menyatakan bahwa untuk setiap aksi terdapat reaksi yang sama besar tetapi berlawanan arah.",
         },
         {
-            question: "Percepatan gravitasi di permukaan bumi adalah ...",
-            options: ["A. 9,8 m/s²", "B. 10 m/s²", "C. 8,9 m/s²", "D. 9 m/s²"],
+            question: "Rumus gaya pada sebuah benda adalah ...",
+            options: [
+                "A. F = m x a",
+                "B. F = m x v",
+                "C. F = m x g",
+                "D. F = m x h",
+            ],
+            answer: 0,
+            explanation: 
+                "Rumus gaya berdasarkan hukum Newton II adalah F = m x a, di mana F adalah gaya, m adalah massa, dan a adalah percepatan.",
+        },
+        {
+            question: "Besaran yang termasuk dalam kelompok besaran pokok adalah ...",
+            options: [
+                "A. Waktu, panjang, massa",
+                "B. Kecepatan, massa, panjang",
+                "C. Massa, percepatan, waktu",
+                "D. Momentum, panjang, waktu",
+            ],
+            answer: 1,
+            explanation: 
+                "Besaran pokok meliputi waktu, panjang, massa, arus listrik, suhu, intensitas cahaya, dan jumlah zat.",
+        },
+        {
+            question: "Energi potensial gravitasi dihitung dengan rumus ...",
+            options: [
+                "A. E = m x g x h",
+                "B. E = 1/2 m v²",
+                "C. E = k x²",
+                "D. E = m x a x h",
+            ],
             answer: 3,
-            explanation:
-                "Percepatan gravitasi di permukaan bumi adalah 9,8 m/s². Nilai ini sering dibulatkan menjadi 10 m/s² untuk mempermudah perhitungan dalam konteks tertentu.",
+            explanation: 
+                "Energi potensial gravitasi dihitung dengan rumus E = m x g x h, di mana m adalah massa, g adalah percepatan gravitasi, dan h adalah ketinggian.",
         },
         {
-            question: "Energi kinetik suatu benda dihitung dengan rumus ...",
-            options: ["A. 1/2 m v²", "B. m g h", "C. 1/2 k x²", "D. m a s"],
-            answer: 4,
-            explanation:
-                "Energi kinetik dihitung dengan rumus 1/2 m v², di mana m adalah massa benda dan v adalah kecepatan benda.",
+            question: "Kecepatan sebuah benda yang bergerak lurus dihitung dengan rumus ...",
+            options: [
+                "A. v = s / t",
+                "B. v = a x t",
+                "C. v = m x g",
+                "D. v = F / m",
+            ],
+            answer: 1,
+            explanation: 
+                "Kecepatan benda yang bergerak lurus dihitung dengan rumus v = s / t, di mana s adalah jarak dan t adalah waktu.",
         },
         {
-            question: "Apa yang dimaksud dengan hukum Newton pertama?",
-            options: ["A. Hukum Kelembaman", "B. Hukum Aksi dan Reaksi", "C. Hukum Grativasi", "D. Hukum Percepatan"],
-            answer: 0,
-            explanation:
-                "Sebuah benda akan tetap diam atau bergerak lurus beraturan kecuali ada gaya eksternal yang bekerja padanya,atau sama dengan Hukum Kelembaman.",
-        },
-        {
-            question: "Sebuah mobil mula-mula diam dan kemudian bergerak dengan percepatan konstan sebesar 2 m/s². Berapa jarak yang ditempuh mobil setelah 5 detik?",
-            options: ["A. 10 m", "B. 25 m", "C. 50 m", "D. 100 m"],
-            answer: 0,
-            explanation:
-                 " jarak yang ditempuh mobil adalah 50 m.",     
-       },
-       {
-            question: "Sebuah benda bermassa 4 kg ditarik dengan gaya 16 N pada bidang datar tanpa gesekan. Hitung percepatan benda tersebut.",
-            options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
+            question: "Satuan SI untuk arus listrik adalah ...",
+            options: [
+                "A. Volt",
+                "B. Ampere",
+                "C. Ohm",
+                "D. Watt",
+            ],
             answer: 2,
-            explanation:
-                  "Gunakan hukum ll newton F=m.a, a=f/m=16/4=4m/s^2.",
-       },
-       {
-            question: "Sebuah benda bermassa 2 kg dipercepat oleh gaya sebesar 10 N pada bidang datar.Berapakah percepatan benda tersebut?.",
-            options: ["A. 5 M/S^2", "B. 10 m/s^2", "C. 2 m/s^2", "D. 4 m/s^2",],
-            answer: 3,
-            explanation:
-                  "Gunakan hukum II Newton: F = m.a. Dengan massa (m) = 2 kg dan gaya (F) = 10 N, maka percepatan (a) = F / m = 10 / 2 = 5 m/s^2. Jawaban yang benar adalah A. 5 m/s^2.",
+            explanation: 
+                "Satuan SI untuk arus listrik adalah Ampere (A).",
         },
         {
-              question: "Sebuah benda di jatuhkan bebas dari ketinggian 20 meter.berapa waktu yang diperlukan benda untuk mencapai tanah? (g = 10m/s^2)",
-              options: ["A. 2 s", "B. 3 s", "C. 4 s", "D. 5 s"],
-              answer: 1,
-              explanation:
-                "Gunakan rumus kinematika: h = 0.5 × g × t². Dengan h = 20 m dan g = 10 m/s², maka t² = (2 × 20) / 10 = 4, sehingga t = √4 = 2 s. Jawaban yang benar adalah A.",
-        },
-        {   
-               question: "Sebuah bola dilempar ke atas dengan kecepatan awal 15 m/s. Berapa waktu yang diperlukan bola untuk mencapai titik tertinggi? g = 10 m/s².",
-               options: ["A. 1,0 s", "B. 1,5 s", "C. 2,0 s", "D. 2,5 s"],
-              answer: 3,
-              explanation:
-                   "Gunakan rumus v = v₀ - g × t. Pada titik tertinggi, v = 0, sehingga t = v₀ / g = 15 / 10 = 1,5 s. Jawaban yang benar adalah B.",
+            question: "Dalam hukum Pascal, tekanan pada fluida ...",
+            options: [
+                "A. Berbeda di setiap titik",
+                "B. Sama besar ke segala arah",
+                "C. Bergantung pada massa benda",
+                "D. Hanya bekerja ke bawah",
+            ],
+            answer: 0,
+            explanation: 
+                "Hukum Pascal menyatakan bahwa tekanan yang diberikan pada fluida dalam wadah tertutup diteruskan sama besar ke segala arah.",
         },
         {
-               question: "Sebuah gaya sebesar 50 N digunakan untuk mendorong sebuah benda sejauh 4 meter pada bidang datar. Berapa besar usaha yang dilakukan?",
-               options:  ["A. 100 J", "B. 150 J", "C. 200 J", "D. 250 J"],
-               answer: 2,
-               explanation:
-                      "Gunakan rumus usaha: W = F × s. Dengan F = 50 N dan s = 4 m, maka W = 50 × 4 = 200 J. Jawaban yang benar adalah C.",
-        },
- 
+             question: "Rumus tekanan dalam fisika adalah ...",
+             options: [
+            "A. P = F / A",
+            "B. P = F x A",
+            "C. P = m x a",
+            "D. P = m / V",
+            ],
+            answer: 2,
+             explanation: 
+                  "Tekanan dihitung dengan rumus P = F / A, di mana P adalah tekanan, F adalah gaya, dan A adalah luas permukaan.",
+    },
+    {
+        question: "Sebuah benda bermassa 2 kg bergerak dengan kecepatan 3 m/s. Energi kinetiknya adalah ...",
+        options: [
+            "A. 3 Joule",
+            "B. 6 Joule",
+            "C. 9 Joule",
+            "D. 18 Joule",
+        ],
+        answer: 3,
+        explanation: 
+            "Energi kinetik dihitung dengan rumus 1/2 m v². Dalam kasus ini, 1/2 x 2 x (3)² = 18 Joule.",
+    },
+    {
+        question: "Hasil kali massa dan kecepatan disebut ...",
+        options: [
+            "A. Momentum",
+            "B. Gaya",
+            "C. Energi kinetik",
+            "D. Daya",
+        ],
+        answer: 0,
+        explanation: 
+            "Hasil kali massa dan kecepatan disebut momentum, yang dinyatakan dengan p = m x v.",
+    },
     ];
 
     const question = useMemo(() => {
@@ -307,4 +351,4 @@ const Quiz = () =>  {
     );
 };
 
-export default Quiz;
+export default Quiz4;

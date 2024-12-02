@@ -2,7 +2,7 @@ import React, { useState, useEffect,  useMemo } from "react";
 import Navbar from "../components/Header";
 import {useNavigate} from "react-router-dom";
 
-const Quiz = () =>  {
+const Quiz5 = () =>  {
     const styles = {
         container: {
             padding: "20px",
@@ -99,83 +99,139 @@ const Quiz = () =>  {
     };
 
     const questionData = [
-    
-        {
-            question: "Hukum Newton I menyatakan bahwa ...",
-            options: [
-                "A. Benda tetap diam atau bergerak lurus beraturan jika tidak ada gaya yang bekerja",
-                "B. Gaya berbanding lurus dengan percepatan",
-                "C. Setiap aksi memiliki reaksi yang sama besar dan berlawanan arah",
-                "D. Momentum benda selalu konstan",
-            ],
-            answer: 2,
-            explanation:
-                "Hukum Newton I atau hukum kelembaman menyatakan bahwa sebuah benda akan tetap diam atau bergerak lurus beraturan kecuali ada gaya total yang bekerja pada benda tersebut.",
-        },
-        {
-            question: "Percepatan gravitasi di permukaan bumi adalah ...",
-            options: ["A. 9,8 m/s²", "B. 10 m/s²", "C. 8,9 m/s²", "D. 9 m/s²"],
-            answer: 3,
-            explanation:
-                "Percepatan gravitasi di permukaan bumi adalah 9,8 m/s². Nilai ini sering dibulatkan menjadi 10 m/s² untuk mempermudah perhitungan dalam konteks tertentu.",
-        },
-        {
-            question: "Energi kinetik suatu benda dihitung dengan rumus ...",
-            options: ["A. 1/2 m v²", "B. m g h", "C. 1/2 k x²", "D. m a s"],
-            answer: 4,
-            explanation:
-                "Energi kinetik dihitung dengan rumus 1/2 m v², di mana m adalah massa benda dan v adalah kecepatan benda.",
-        },
-        {
-            question: "Apa yang dimaksud dengan hukum Newton pertama?",
-            options: ["A. Hukum Kelembaman", "B. Hukum Aksi dan Reaksi", "C. Hukum Grativasi", "D. Hukum Percepatan"],
-            answer: 0,
-            explanation:
-                "Sebuah benda akan tetap diam atau bergerak lurus beraturan kecuali ada gaya eksternal yang bekerja padanya,atau sama dengan Hukum Kelembaman.",
-        },
-        {
-            question: "Sebuah mobil mula-mula diam dan kemudian bergerak dengan percepatan konstan sebesar 2 m/s². Berapa jarak yang ditempuh mobil setelah 5 detik?",
-            options: ["A. 10 m", "B. 25 m", "C. 50 m", "D. 100 m"],
-            answer: 0,
-            explanation:
-                 " jarak yang ditempuh mobil adalah 50 m.",     
-       },
-       {
-            question: "Sebuah benda bermassa 4 kg ditarik dengan gaya 16 N pada bidang datar tanpa gesekan. Hitung percepatan benda tersebut.",
-            options: ["A. 2 m/s²", "B. 3 m/s²", "C. 4 m/s²", "D. 5 m/s²"],
-            answer: 2,
-            explanation:
-                  "Gunakan hukum ll newton F=m.a, a=f/m=16/4=4m/s^2.",
-       },
-       {
-            question: "Sebuah benda bermassa 2 kg dipercepat oleh gaya sebesar 10 N pada bidang datar.Berapakah percepatan benda tersebut?.",
-            options: ["A. 5 M/S^2", "B. 10 m/s^2", "C. 2 m/s^2", "D. 4 m/s^2",],
-            answer: 3,
-            explanation:
-                  "Gunakan hukum II Newton: F = m.a. Dengan massa (m) = 2 kg dan gaya (F) = 10 N, maka percepatan (a) = F / m = 10 / 2 = 5 m/s^2. Jawaban yang benar adalah A. 5 m/s^2.",
-        },
-        {
-              question: "Sebuah benda di jatuhkan bebas dari ketinggian 20 meter.berapa waktu yang diperlukan benda untuk mencapai tanah? (g = 10m/s^2)",
-              options: ["A. 2 s", "B. 3 s", "C. 4 s", "D. 5 s"],
-              answer: 1,
-              explanation:
-                "Gunakan rumus kinematika: h = 0.5 × g × t². Dengan h = 20 m dan g = 10 m/s², maka t² = (2 × 20) / 10 = 4, sehingga t = √4 = 2 s. Jawaban yang benar adalah A.",
-        },
-        {   
-               question: "Sebuah bola dilempar ke atas dengan kecepatan awal 15 m/s. Berapa waktu yang diperlukan bola untuk mencapai titik tertinggi? g = 10 m/s².",
-               options: ["A. 1,0 s", "B. 1,5 s", "C. 2,0 s", "D. 2,5 s"],
-              answer: 3,
-              explanation:
-                   "Gunakan rumus v = v₀ - g × t. Pada titik tertinggi, v = 0, sehingga t = v₀ / g = 15 / 10 = 1,5 s. Jawaban yang benar adalah B.",
-        },
-        {
-               question: "Sebuah gaya sebesar 50 N digunakan untuk mendorong sebuah benda sejauh 4 meter pada bidang datar. Berapa besar usaha yang dilakukan?",
-               options:  ["A. 100 J", "B. 150 J", "C. 200 J", "D. 250 J"],
-               answer: 2,
-               explanation:
-                      "Gunakan rumus usaha: W = F × s. Dengan F = 50 N dan s = 4 m, maka W = 50 × 4 = 200 J. Jawaban yang benar adalah C.",
-        },
- 
+
+    {
+        question: "Benda yang memiliki massa besar memerlukan ... untuk mempercepat geraknya.",
+        options: [
+            "A. Gaya yang lebih kecil",
+            "B. Gaya yang lebih besar",
+            "C. Percepatan yang lebih kecil",
+            "D. Energi yang lebih kecil",
+        ],
+        answer: 1,
+        explanation:
+            "Menurut hukum Newton II, gaya yang dibutuhkan untuk mempercepat benda berbanding lurus dengan massa. Benda yang lebih besar memerlukan gaya yang lebih besar untuk mempercepatnya.",
+    },
+    {
+        question: "Perubahan energi dari energi potensial menjadi energi kinetik terjadi pada ...",
+        options: [
+            "A. Benda diam",
+            "B. Benda yang jatuh bebas",
+            "C. Benda yang diputar",
+            "D. Benda dalam keadaan setimbang",
+        ],
+        answer: 2,
+        explanation:
+            "Ketika benda jatuh bebas, energi potensialnya berkurang sementara energi kinetiknya bertambah sesuai hukum kekekalan energi.",
+    },
+    {
+        question: "Gelombang bunyi termasuk gelombang ...",
+        options: [
+            "A. Elektromagnetik",
+            "B. Longitudinal",
+            "C. Transversal",
+            "D. Stasioner",
+        ],
+        answer: 0,
+        explanation:
+            "Gelombang bunyi termasuk gelombang longitudinal, di mana partikel medium berosilasi sejajar dengan arah perambatan gelombang.",
+    },
+    {
+        question: "Hukum Archimedes menyatakan bahwa ...",
+        options: [
+            "A. Benda yang terapung memiliki massa jenis yang lebih kecil dari fluida",
+            "B. Benda akan selalu tenggelam dalam fluida",
+            "C. Tekanan fluida selalu sebanding dengan gaya angkat",
+            "D. Benda dalam fluida dipengaruhi gaya angkat sebesar berat fluida yang dipindahkan",
+        ],
+        answer: 3,
+        explanation:
+            "Hukum Archimedes menyatakan bahwa gaya angkat ke atas pada benda dalam fluida sama dengan berat fluida yang dipindahkan.",
+    },
+    {
+        question: "Momentum sudut suatu benda dapat dihitung dengan rumus ...",
+        options: [
+            "A. L = r x p",
+            "B. L = m x v",
+            "C. L = I x ω",
+            "D. L = F x d",
+        ],
+        answer: 2,
+        explanation:
+            "Momentum sudut dihitung dengan L = I x ω, di mana I adalah momen inersia dan ω adalah kecepatan sudut.",
+    },
+    {
+        question: "Sebuah cermin cekung memiliki fokus sejauh 10 cm. Jarak fokusnya adalah ...",
+        options: [
+            "A. 10 cm",
+            "B. 5 cm",
+            "C. 20 cm",
+            "D. 15 cm",
+        ],
+        answer: 0,
+        explanation:
+            "Jarak fokus cermin cekung adalah setengah dari jari-jari kelengkungan cermin. Dalam soal ini, fokus sudah diberikan sebagai 10 cm.",
+    },
+    {
+        question: "Hasil kali gaya dan perpindahan disebut ...",
+        options: [
+            "A. Daya",
+            "B. Usaha",
+            "C. Energi",
+            "D. Momentum",
+        ],
+        answer: 1,
+        explanation:
+            "Hasil kali gaya dan perpindahan disebut usaha, dengan rumus W = F x d x cos(θ).",
+    },
+    {
+        question: "Hasil kali gaya dan perpindahan disebut ...",
+        options: [
+            "A. Daya",
+            "B. Usaha",
+            "C. Energi",
+            "D. Momentum",
+        ],
+        answer: 3,
+        explanation:
+            "Hasil kali gaya dan perpindahan disebut usaha, dengan rumus W = F x d x cos(θ).",
+    },
+    {
+        question: "Frekuensi suatu gelombang dapat dihitung dengan rumus ...",
+        options: [
+            "A. f = v / λ",
+            "B. f = T / v",
+            "C. f = 1 / T",
+            "D. f = λ / v",
+        ],
+        answer: 2,
+        explanation:
+            "Frekuensi suatu gelombang dihitung dengan f = 1 / T, di mana T adalah periode gelombang.",
+    },
+    {
+        question: "Satuan SI untuk daya adalah ...",
+        options: [
+            "A. Joule",
+            "B. Watt",
+            "C. Newton",
+            "D. Pascal",
+        ],
+        answer: 1,
+        explanation:
+            "Satuan SI untuk daya adalah Watt (W), yang menunjukkan energi yang digunakan per satuan waktu.",
+    },
+    {
+        question: "Gaya sentripetal selalu bekerja ...",
+        options: [
+            "A. Menjauh dari pusat lingkaran",
+            "B. Sejajar dengan arah gerak benda",
+            "C. Menuju pusat lingkaran",
+            "D. Tegak lurus ke arah gravitasi",
+        ],
+        answer: 2,
+        explanation:
+            "Gaya sentripetal selalu bekerja menuju pusat lingkaran untuk menjaga benda tetap bergerak dalam lintasan melingkar.",
+    },
     ];
 
     const question = useMemo(() => {
@@ -307,4 +363,4 @@ const Quiz = () =>  {
     );
 };
 
-export default Quiz;
+export default Quiz5;

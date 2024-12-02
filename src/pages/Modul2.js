@@ -142,8 +142,18 @@ const Modul2 = () => {
                     }
                 `}
             </style>
-            <header>
-                <h1>ELASTISITAS BAHAN</h1>
+            <header style={{
+                background: "linear-gradient(135deg, #007acc, #005f99)",
+                color: "white",
+                padding:"15px",
+                borderRadius:"10px",
+                textAlign:"center",
+                marginBottom:"20px"
+            }}>
+                <h1 style={{
+                    fontSize:"2rem",
+                    fontWeight:"bold"
+                }}>ELASTISITAS BAHAN</h1>
             </header>
             <section>
                 <h2>Pendahuluan</h2>
