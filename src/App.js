@@ -18,6 +18,8 @@ import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
 import Kalkulator from "./pages/Kalkulator";
+import ContactForm from "./pages/ContactForm";
+
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
@@ -48,6 +50,7 @@ const App = () => {
           <Route path="/menubook" element={<MenuBook />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/kalkulator" element={<Kalkulator />} />
+          <Route path="/ContactForm" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>

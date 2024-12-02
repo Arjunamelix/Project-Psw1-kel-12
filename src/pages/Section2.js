@@ -14,7 +14,7 @@ const Section2 = () => {
             <Container>
                 <Row className="justify-content-center">
                     <Col md={8}>
-                        <h2 style={{ fontSize: "2.5rem", fontWeight: "bold", marginBottom: "30px" }}>
+                        <h2 style={{ fontSize: "2.5rem", fontWeight: "bold", marginBottom: "30px", color: "black" }}>
                             Pengenalan Website Pembelajaran Fisika Kelas 11
                         </h2>
                         <p style={{ fontSize: "1.2rem", marginBottom: "30px", color: "#555" }}>

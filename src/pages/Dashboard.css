@@ -4,7 +4,7 @@
     margin-bottom: 2rem;
     overflow-x: auto;
     padding: 10px;
-    background-color: #fff;
+    background: linear-gradient(145deg, #2D3748, #1E293B);
     border-radius: 8px;
   }
   
@@ -57,7 +57,7 @@
   
   .dashboard-container h1 {
     font-size: 2rem;
-    color: #1E3A8A;
+    color: white;
     font-weight: bold;
   }
   

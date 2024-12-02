@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CourseCard from './CourseCard';
 import './Dashboard.css';
+import kinetik from './gamgam.jpg'; 
+import Pemabal from './pg.jpeg'
+import Piko from './piko.png'
+import Fluitis from './fs.png'
+import Pertama from './pertama.jpg'
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -22,7 +27,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 2,
       total: 12,
-      image: 'https://via.placeholder.com/300x150',
+      image: Pertama,
       url: '/Modul9',
     },
     {
@@ -31,8 +36,8 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 2,
       total: 8,
-      image: 'https://via.placeholder.com/300x150',
-      url: '/Modul6',
+      image: kinetik,
+      url: './Modul6',
     },
     {
       title: 'Fluida Statis',
@@ -40,7 +45,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 3,
       total: 8,
-      image: 'https://via.placeholder.com/300x150',
+      image: Fluitis,
       url: '/modul3',
     },
     {
@@ -49,7 +54,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 4,
       total: 6,
-      image: 'https://via.placeholder.com/300x150',
+      image: Piko,
       url: '/Modul7',
     },
     {
@@ -58,7 +63,7 @@ const Dashboard = () => {
       by: 'Sarjuna',
       learned: 9,
       total: 16,
-      image: 'https://via.placeholder.com/300x150',
+      image: Pemabal,
       url: '/Modul10',
     },
   ];
