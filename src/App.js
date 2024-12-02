@@ -17,8 +17,16 @@ import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
+<<<<<<< HEAD
 
 
+=======
+import Kalkulator from "./pages/Kalkulator";
+import Quiz2 from "./pages/Quiz2";
+import Quiz3 from "./pages/Quiz3";
+import Quiz4 from "./pages/Quiz4";
+import Quiz5 from "./pages/Quiz5";
+>>>>>>> 6f2ee8cf0dca43ed8d249b9b810a416336a18c06
 const App = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
 
@@ -28,6 +36,7 @@ const App = () => {
 
   return (
     <Router>
+<<<<<<< HEAD
     <div>
       <h1></h1>
       <Routes>
@@ -51,6 +60,34 @@ const App = () => {
 
     </Routes>
     </div>
+=======
+      <div>
+        <h1></h1>
+        <Routes>
+          <Route path="/" element={<Navigate to="/menuhome" replace />} />
+          <Route path="/daftar" element={<Daftar />} /> {/* Perbaiki eAlement menjadi element */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/menuhome" element={<MenuHome />} />
+          <Route path="/modul1" element={<Modul1 />} />
+          <Route path="/modul2" element={<Modul2 />} />
+          <Route path="/modul3" element={<Modul3 />} />
+          <Route path="/modul4" element={<Modul4 />} />
+          <Route path="/modul5" element={<Modul5 />} />
+          <Route path="/modul6" element={<Modul6 />} />
+          <Route path="/modul7" element={<Modul7 />} />
+          <Route path="/modul8" element={<Modul8 />} />
+          <Route path="/modul9" element={<Modul9 />} />
+          <Route path="/modul10" element={<Modul10 />} />
+          <Route path="/menubook" element={<MenuBook />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/Quiz2" element={<Quiz2 />} />
+          <Route path="/Quiz3" element={<Quiz3 />} />
+          <Route path="/Quiz4" element={<Quiz4 />} />
+          <Route path="/Quiz5" element={<Quiz5 />} />
+          <Route path="/kalkulator" element={<Kalkulator />} />
+        </Routes>
+      </div>
+>>>>>>> 6f2ee8cf0dca43ed8d249b9b810a416336a18c06
     </Router>
   );
 };
