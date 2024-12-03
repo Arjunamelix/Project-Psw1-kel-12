@@ -22,17 +22,19 @@ const menubookStyle = {
     justifyContent:"center",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     padding:"20px",
-    background:"linear-gradient(135deg, #f5f7fa, #c3cfe2)",
+    // background:"linear-gradient(135deg, #e0f7fa, #80deea)",
     borderRadius:"15px",
     boxShadow:"0 8px 20px rgba(0, 0, 0, 0.2)",
     animation:"fadeIn 1s ease-in-out",
+    minHeight: "100vh",
+    background: "url('bgmenubook.png') no-repeat center center/cover",
 };
 
 const cardstyle = {
     cursor:"pointer",
     padding:"10px",
     borderRadius:"10px",
-    backgroundColor:"#fff",
+
     boxShadow:"0 4px 10px rgba(0, 0, 0, 0.1)",
     textAlign:"center",
     transition:"transform 0.3s, box-shadow 0.3s",

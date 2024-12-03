@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showTentangKami, setShowTentangKami] = useState(false);
-    const [showAkademik, setShowAkademik] = useState(false);
+    // const [showAkademik, setShowAkademik] = useState(false);
     const [username, setUsername] = useState(localStorage.getItem('username') || null);
+    const [showLatihan, setShowLatihan] = useState(false);
 
     useEffect(() => {
         const storedUsername = localStorage.getItem('username');
@@ -31,15 +32,14 @@ const Navbar = () => {
                     >
                         <a href="/menubook">Materi</a>
                     </li>
-                    <li><Link to="/quiz">Latihan</Link></li>
-                    <li><Link to="/kalkulator">Kalkulator</Link></li>
-                    <li><Link to="/BankSoal2">Bank Soal</Link></li>
-                    <li><Link to="/ContactForm">Kontak</Link></li>
+                    <li><a href="/quiz">Latihan</a></li>
+                    <li><a href="/kalkulator">Kalkulator</a></li>
+                    <li><a href="/BankSoal2">Bank Soal</a></li>
+                    <li><a href="#">Kontak</a></li>
                     <div className="auth-section">
                         <a href="/login" className="sign-in-link">Sign In</a>
                         <a href="/daftar" className="cta-button">Sign Up</a>
                     </div>
-
                     {/* <li>
                         {username ? (
                             <div onClick={handleLogout}>

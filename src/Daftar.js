@@ -50,19 +50,32 @@ const Daftar =() => {
 
             <div style={{
                 width:"50%",
-                overflow:"hidden",
-                position:"relative",
+                padding: "40px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "#4A90E2",
+                color: "#fff",
+                borderRadius: "10px 0 0 10px",
+                textAlign: "center", 
+                flexDirection: "column"     
             }}>
-                <video style={{
-                    width:"100%",
-                    height:"100%",
-                    objectFit:"cover",
-                }}
-                src="bgvideo.mp4"
-                autoPlay
-                loop
-                muted
-                />
+                <div>
+                    <h2 style={{
+                        fontSize: "30px",
+                        fontWeight: "bold",
+                        marginBottom: "20px"
+                    }}>
+                        Silahkan Daftar
+                    </h2>
+                    <p style={{
+                        fontSize: "18px",
+                        marginBottom: "30px",
+                    }}>
+                        Ayo Daftar dan Belajar Bersama Di Sini
+                    </p>
+                </div>
+
             </div>
 
             <div style={{
