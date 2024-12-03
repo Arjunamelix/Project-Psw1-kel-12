@@ -18,10 +18,9 @@ import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
 import Kalkulator from "./pages/Kalkulator";
-import Quiz2 from "./pages/Quiz2";
-import Quiz3 from "./pages/Quiz3";
-import Quiz4 from "./pages/Quiz4";
-import Quiz5 from "./pages/Quiz5";
+import ContactForm from './pages/ContactForm';
+
+
 const App = () => {
   const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
 
@@ -50,11 +49,8 @@ const App = () => {
           <Route path="/modul10" element={<Modul10 />} />
           <Route path="/menubook" element={<MenuBook />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/Quiz2" element={<Quiz2 />} />
-          <Route path="/Quiz3" element={<Quiz3 />} />
-          <Route path="/Quiz4" element={<Quiz4 />} />
-          <Route path="/Quiz5" element={<Quiz5 />} />
           <Route path="/kalkulator" element={<Kalkulator />} />
+          <Route path="/contactform" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>

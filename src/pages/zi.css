@@ -39,7 +39,7 @@ body {
     max-width: 900px;
     color: #ffffff;
     padding: 2rem;
-    width: 100%; /* Ensure it takes full width on smaller screens */
+    width: 100%;
 }
 
 .hero-title {
@@ -153,11 +153,10 @@ body {
     }
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2rem;
-        padding: 0 1rem; /* Add padding for smaller screens */
+        padding: 0 1rem;
     }
 
     .hero-description {
@@ -165,7 +164,7 @@ body {
     }
 
     .hero-container {
-        padding: 1rem; /* Adjust padding for smaller screens */
+        padding: 1rem;
     }
 
     .search-input {
