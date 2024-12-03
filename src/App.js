@@ -18,7 +18,7 @@ import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
 import Kalkulator from "./pages/Kalkulator";
-import ContactForm from './ContactForm';
+import ContactForm from './pages/ContactForm';
 
 
 const App = () => {
