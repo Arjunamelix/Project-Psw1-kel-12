@@ -25,7 +25,7 @@ const Book10= () => {
     const title = {
         margin: '20px 0 10px',
         fontSize:"20px",
-        color: '#ffa07a',
+        color: '#333',
         fontFamily:"times new roman"
     };
 
