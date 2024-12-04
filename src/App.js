@@ -18,7 +18,7 @@ import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
 import Kalkulator from "./pages/Kalkulator";
-import ContactForm from './pages/ContactForm';
+import Contact from './pages/Contact';
 
 
 const App = () => {
@@ -50,7 +50,7 @@ const App = () => {
           <Route path="/menubook" element={<MenuBook />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/kalkulator" element={<Kalkulator />} />
-          <Route path="/contactform" element={<ContactForm />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

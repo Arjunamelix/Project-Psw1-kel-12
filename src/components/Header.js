@@ -48,7 +48,7 @@ const Navbar = () => {
                         )}
                     </li>
                     <li><a href="/kalkulator">Kalkulator</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="/Contact">Kontak</a></li>
                     <div className="auth-section">
          
                             
