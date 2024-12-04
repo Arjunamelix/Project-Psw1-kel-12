@@ -58,7 +58,7 @@ const Login = () => {
           }}
         >
           <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-            Selamat Datang Kembali!
+            Welcome Back Again!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
             Silakan login untuk melanjutkan belajar bersama kami.
