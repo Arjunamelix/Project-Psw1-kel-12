@@ -58,7 +58,7 @@ const Login = () => {
           }}
         >
           <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-            Selamat Datang Kembali!
+            Welcome back again!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
             Silakan login untuk melanjutkan belajar bersama kami.
@@ -129,7 +129,7 @@ const Login = () => {
             </button>
 
             <div className="mt-3 text-center">
-                <p>Have An Account
+                <p>Don't Have An Account?
                     <button className="btn btn-link"
                     onClick={() => navigate ('/daftar')}>
                         Sign Up Here

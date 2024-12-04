@@ -55,7 +55,10 @@ const Daftar = () => {
           }}
         >
           <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-            Selamat Datang!
+            Welcome to 
+          </h2>
+          <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
+             PhysicsUnveiled!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
             Yuk daftar untuk belajar bersama kami dengan mudah!
@@ -141,7 +144,7 @@ const Daftar = () => {
             </button>
 
             <div className="mt-3 text-center">
-                <p>Have An Account
+                <p>Have An Account?
                     <button className="btn btn-link"
                     onClick={() => navigate ('/login')}>
                         Sign In Here
