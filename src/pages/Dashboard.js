@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CourseCard from './CourseCard';
 import './Dashboard.css';
-import kinetik from './gamgam.jpg'; 
-import Pemabal from './pg.jpeg'
-import Piko from './piko.png'
-import Fluitis from './fs.png'
-import Pertama from './pertama.jpg'
+import kinetik from './dua.png'; 
+import Pemabal from './tiga.png'
+import Piko from './empat.png'
+import Fluitis from './lima.png'
+import Pertama from './satu.png'
 
 const Dashboard = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -24,7 +24,6 @@ const Dashboard = () => {
     {
       title: "Gelombang Bunyi & Cahaya",
       category: 'Bab5',
-      by: 'Sarjuna',
       learned: 2,
       total: 12,
       image: Pertama,
@@ -32,17 +31,15 @@ const Dashboard = () => {
     },
     {
       title: 'Teori Kinetik Gas',
-      category: 'Bab6',
-      by: 'Sarjuna',
+      category: 'Bab6',   
       learned: 2,
       total: 8,
       image: kinetik,
-      url: './Modul6',
+      url: '/Modul6',
     },
     {
       title: 'Fluida Statis',
       category: 'Bab7',
-      by: 'Sarjuna',
       learned: 3,
       total: 8,
       image: Fluitis,
@@ -51,7 +48,6 @@ const Dashboard = () => {
     {
       title: 'Karakteristik Gelombang Mekanik',
       category: 'Bab8',
-      by: 'Sarjuna',
       learned: 4,
       total: 6,
       image: Piko,
@@ -60,7 +56,6 @@ const Dashboard = () => {
     {
       title: 'Pemanasan Global',
       category: 'Bab9',
-      by: 'Sarjuna',
       learned: 9,
       total: 16,
       image: Pemabal,

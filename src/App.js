@@ -17,6 +17,10 @@ import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
+import Quiz2 from "./pages/Quiz2";
+import Quiz3 from "./pages/Quiz3";
+import Quiz4 from "./pages/Quiz4";
+import Quiz5 from "./pages/Quiz5";
 import Kalkulator from "./pages/Kalkulator";
 import Contact from './pages/Contact';
 
@@ -50,7 +54,11 @@ const App = () => {
           <Route path="/menubook" element={<MenuBook />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/kalkulator" element={<Kalkulator />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/quiz2" element={<Quiz2/>}/>
+          <Route path="/quiz3" element={<Quiz3/>}/>
+          <Route path="/quiz4" element={<Quiz4/>}/>
+          <Route path="/quiz5" element={<Quiz5/>}/>
         </Routes>
       </div>
     </Router>

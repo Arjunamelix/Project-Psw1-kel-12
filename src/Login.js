@@ -1,214 +1,146 @@
-import React from "react";
-import { useState } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Login =() => {
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState ('');
-    const [password, setPassword] = useState('');
-    const [showPassword, setShowPassword] = useState('');
-    const [message, setMessage] = useState ('');
-    const [isError, setIsError] = useState ('');
-    const navigate = useNavigate();
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
-    };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
+    if (email === storedEmail && password === storedPassword) {
+      alert("Login berhasil!");
+      navigate("/menuhome");
+    } else {
+      alert("Email atau password salah!");
+    }
+    setEmail("");
+    setPassword("");
+  };
 
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value);
-    };
-
-
-    
-    const handleLogin = (event) => {
-        event.preventDefault();
-        const storedemail = localStorage.getItem("email");
-        const storedpassword = localStorage.getItem("password");
-
-        setUsername('');
-        setEmail('');
-        setPassword('');
-       
-        if (email === storedemail && password === storedpassword) {
-            localStorage.setItem('username', username);
-            setMessage("Eaa berhasil login");
-            setIsError(false);
-            navigate ('/MenuHome');
-        } else {
-            setMessage("Salah pasti password mu");
-            setIsError(true);
-        }
-    };
-
-    return (
-        <div
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+        backgroundColor: "FFFFFF",
+        padding: "20px",
+        color: "#fff",
+      }}
+    >
+      <div
         style={{
-            display:"flex",
-            justifyContent:"center",
-            alignItems:"center",
-            minHeight:"100vh",
-            backgroundColor:"#F0F4F8",
-            padding:"20px",
-        }}>
-        <div style={{
-                display:"flex",
-                flexDirection:"row",
-                backgroundColor:"#fff",
-                borderRadius:"10px",
-                boxShadow:"0 8px 20px rgba(0, 0, 0, 0.1)",
-                maxWidth:"800px",
-                width:"100%",
-                overflow:"hidden",
-                border:"1px solid #ddd",
-            }} >
+          display: "flex",
+          flexDirection: "row",
+          backgroundColor: "#1B263B",
+          borderRadius: "15px",
+          boxShadow: "0 8px 20px rgba(0, 0, 0, 0.3)",
+          maxWidth: "900px",
+          width: "100%",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            width: "50%",
+            padding: "40px",
+            backgroundColor: "#0D1B2A",
+            color: "#FFD700",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
+            Selamat Datang Kembali!
+          </h2>
+          <p style={{ fontSize: "18px", textAlign: "center" }}>
+            Silakan login untuk melanjutkan belajar bersama kami.
+          </p>
+        </div>
+        <div
+          style={{
+            padding: "40px",
+            width: "50%",
+            backgroundColor: "#1B263B",
+          }}
+        >
+          <h3
+            style={{
+              color: "#FFD700",
+              fontSize: "24px",
+              fontWeight: "600",
+              textAlign: "center",
+              marginBottom: "20px",
+            }}
+          >
+            Sign In
+          </h3>
+          <form onSubmit={handleSubmit} style={{ display: "grid", gap: "15px" }}>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              style={{
+                padding: "12px",
+                fontSize: "16px",
+                borderRadius: "8px",
+                border: "1px solid #394867",
+                backgroundColor: "#273A50",
+                color: "#FFD700",
+              }}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={{
+                padding: "12px",
+                fontSize: "16px",
+                borderRadius: "8px",
+                border: "1px solid #394867",
+                backgroundColor: "#273A50",
+                color: "#FFD700",
+              }}
+            />
+            <button
+              type="submit"
+              style={{
+                padding: "12px",
+                fontSize: "18px",
+                borderRadius: "8px",
+                border: "none",
+                backgroundColor: "#FFD700",
+                color: "#0D1B2A",
+                cursor: "pointer",
+              }}
+            >
+              Sign In
+            </button>
 
-            <div style={{
-                width:"50%",
-                padding: "40px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor: "#4A90E2",
-                color: "#fff",
-                borderRadius: "10px 0 0 10px",
-                textAlign: "center", 
-                flexDirection: "column"     
-            }}>
-                <div>
-                    <h2 style={{
-                        fontSize: "30px",
-                        fontWeight: "bold",
-                        marginBottom: "20px"
-                    }}>
-                        Silahkan Login
-                    </h2>
-                    <p style={{
-                        fontSize: "18px",
-                        marginBottom: "30px",
-                    }}>
-                        Ayo Daftar dan Belajar Bersama Di Sini
-                    </p>
-                </div>
-
-            </div>
-
-            <div style={{
-                padding:"40px",
-                width:"50%",
-                display:"flex",
-                flexDirection:"column",
-                justifyContent:"center",
-            }}>
-            
-            <h3 style={{
-                color:"#003366",
-                fontWeight:"600",
-                marginBottom:"20px",
-                fontSize:"24px",
-                textAlign:"center"
-            }}>Sign In Here</h3>
-
-            <form onSubmit={handleLogin} style={{
-                display:"grid",
-                gap:"15px"
-            }}>
-
-                    <input
-                    type="email"
-                    placeholder="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required 
-                    style={{
-                        padding:"12px",
-                        fontSize:"16px",
-                        borderRadius:"5px",
-                        border:"1px solid #ddd",
-                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                        transition:"all 0.3s"
-                    }}
-                />
-                
-                
-                <div style={{
-                    position:"relative"
-                }}>
-                    <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    style={{
-                        padding:"12px",
-                        fontSize:"16px",
-                        borderRadius:"5px",
-                        border:"1px solid #ddd",
-                        width:"100%",
-                        boxShadow:"inset 0 1px 2px rgba(0, 0, 0, 0.1)",
-                        transition:"all 0.3s"
-                    }}
-                    />
-                </div>
-
-                <button type="submit"
-                    style={{
-                        marginTop:"20px",
-                        justifyContent:"center",
-                        padding:"12px",
-                        fontSize:"18px",
-                        borderRadius:"5px",
-                        border:"none",
-                        width:"100%",
-                        backgroundColor:"#4A90E2",
-                        color:"#ffffff",
-                        cursor:"pointer",
-                        transition:"background-color 0.3s ease"
-                    }}
-
-                    onMouseEnter={(e) => 
-                        (e.target.style.transform="scale(1.05)")
-                    }
-                    onMouseLeave={(e) => 
-                    (e.target.style.transform="scale(1)")
-                    }
-
-                >Sign Up</button>           
-                
             <div className="mt-3 text-center">
-                <p>Don't Have An Account?
-                    <button
-                        className="btn btn-link"
-                        onClick={() => navigate('/daftar')}>
-                            Sign Up Here
+                <p>Have An Account
+                    <button className="btn btn-link"
+                    onClick={() => navigate ('/daftar')}>
+                        Sign Up Here
                     </button>
                 </p>
-            </div>
-
-            </form>
-            {message && <div style={{
-                fontSize:"18px",
-                padding:"10px",
-                borderRadius:"5px",
-                border:"none",
-                backgroundColor:"#DFF0D8",
-                color:"#3C763D",
-                cursor:"pointer",
-                transition:"all 0.3 ease",
-                boxShadow:"0px 4px 8px rgba(0, 0, 0, 0.1)",
-                
-            }}>
-                {message}
-        </div>}
+                </div>
+          </form>
         </div>
-        </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Login;

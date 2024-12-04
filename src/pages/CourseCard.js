@@ -8,7 +8,6 @@ const CourseCard = ({ title, category, by, learned, total, image, onClick }) => 
       <div className="course-card-content">
         <h3>{title}</h3>
         <p>{category}</p>
-        <p>By: {by}</p>
         <p>
           Progress: {learned}/{total}
         </p>
