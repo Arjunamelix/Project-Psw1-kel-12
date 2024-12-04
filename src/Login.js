@@ -13,13 +13,13 @@ const Login = () => {
     const storedPassword = localStorage.getItem("password");
 
     if (email === storedEmail && password === storedPassword) {
-      setBerhasil("Sign in berhasil! Anda akan diarahkan ke page home..");
+      setBerhasil("Sign in berhasil! Anda akan diarahkan ke homepage..");
     
       setTimeout(() => {
         navigate("/menuhome");
       }, 3000);
     } else {
-      alert("Email atau password salah!");
+      setBerhasil("Email atau password salah!");
     }
 
     setEmail("");
