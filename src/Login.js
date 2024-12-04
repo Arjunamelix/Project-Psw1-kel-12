@@ -127,6 +127,15 @@ const Login = () => {
             >
               Sign In
             </button>
+
+            <div className="mt-3 text-center">
+                <p>Have An Account
+                    <button className="btn btn-link"
+                    onClick={() => navigate ('/daftar')}>
+                        Sign Up Here
+                    </button>
+                </p>
+                </div>
           </form>
         </div>
       </div>
