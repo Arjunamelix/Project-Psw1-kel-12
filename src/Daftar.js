@@ -55,10 +55,7 @@ const Daftar = () => {
           }}
         >
           <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-            Welcome to 
-          </h2>
-          <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-             PhysicsUnveiled!
+          Welcome To PhysicsUnveiled!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
             Yuk daftar untuk belajar bersama kami dengan mudah!
