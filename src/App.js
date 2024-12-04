@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react"; // Impor useState
 import Daftar from './Daftar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
@@ -24,7 +24,7 @@ import Quiz4 from "./pages/Quiz4";
 import Quiz5 from "./pages/Quiz5";
 
 const App = () => {
-  const [searchQuery, setSearchQuery] = useState(""); 
+  const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
 
   const handleSearch = (query) => {
     setSearchQuery(query);

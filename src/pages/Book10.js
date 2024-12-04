@@ -9,7 +9,6 @@ const Book10= () => {
         textAlign: 'center',
         margin: ' 50px auto',
         padding: '20px',
-        backgroundColor: '#f9f9f9',
         BorderRadius: '10px',
         maxWidth: '300px',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
@@ -26,7 +25,7 @@ const Book10= () => {
     const title = {
         margin: '20px 0 10px',
         fontSize:"20px",
-        color: '#333',
+        color: '#ffa07a',
         fontFamily:"times new roman"
     };
 

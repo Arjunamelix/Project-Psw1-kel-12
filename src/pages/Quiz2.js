@@ -108,7 +108,7 @@ const Quiz2 = () =>  {
                     "Gunakan rumus daya: P = W / t. Dengan W = 300 J dan t = 5 s, maka P = 300 / 5 = 100 W. Jawaban yang benar adalah D.",
         },
         {
-              quetion: "Sebuah benda bermassa 2 kg bergerak melingkar dengan jari-jari lintasan 0,5 m dan kecepatan 4 m/s. Berapa besar gaya sentripetal yang bekerja pada benda?",
+              question: "Sebuah benda bermassa 2 kg bergerak melingkar dengan jari-jari lintasan 0,5 m dan kecepatan 4 m/s. Berapa besar gaya sentripetal yang bekerja pada benda?",
               options:  ["A. 16 N", "B. 32 N", "C. 8 N", "D. 4 N"],
               answer: 3,
               explanation:

@@ -151,7 +151,157 @@ const Modul9 = () => {
                     Gelombang bunyi merambat melalui medium seperti udara, air, atau padatan, sedangkan gelombang cahaya dapat merambat bahkan di ruang hampa.                
                 </p>
             </section>
-            <section>
+            <section className="card">
+                <p>Gelombang Bunyi adalah gelombang yang merambat melalui medium 
+                   tertentu. Gelombang bunyi merupakan gelombang mekanik yang 
+                   digolongkan sebagai gelombang longitudinal. Gelombang bunyi ini 
+                   menghantarkan bunyi ke telinga manusia. Bunyi/ suara dapat terdengar 
+                   karena adanya getaran yang menjalar ke telinga pendengar.  Lalu bagaimana 
+                   cara menentukan cepat rambat bunyi?  
+                   Simak uraian berikut.</p>
+                
+                <strong>1. Cepat Rambat Bunyi </strong>
+                <p>Bunyi merupakan gelombang longitudinal yang dapat merambat dalam medium 
+                   padat, cair, dan gas. Cepat rambat bunyi tergantung pada sifat-sifat medium rambat, 
+                   maka bunyi mempunyai cepat rambat yang dipengaruhi oleh dua faktor yaitu : </p>
+                <p>a. Kerapatan partikel medium yang dilalui bunyi. Semakin rapat susunan partikel 
+                   medium maka semakin cepat bunyi merambat, sehingga bunyi merambat paling 
+                   cepat pada zat padat. </p>
+                <p>b. Suhu medium, semakin panas suhu medium yang dilalui maka semakin cepat bunyi 
+                   merambat. </p>
+                <p>Cepat rambat bunyi dapat dihitung dengan menggunakan persamaan :</p>
+
+                <img 
+                     src="modul9.png"
+                     style={{width: "100px", height: "30px", margin: "5px"}}
+                />
+                <p>Keterangan : </p>
+                <p>v  : cepat rambat bunyi </p>
+                <p>λ  : panjang gelombang bunyi </p>
+                <p>f  : frekuensi bunyi </p>
+                <p>Cepat rambat bunyi tergantung pada mediumnya: </p>
+
+                <strong> a. Cepat rambat bunyi di dalam medium gas </strong>
+                <img 
+                     src="modul9.1.png"
+                     style={{width: "100px", height: "60px", margin: "5px"}}
+                />
+                <p>v = cepat rambat bunyi  (m/s) </p>
+                <p>γ = tetapan Laplace </p>
+                <p>R = tetapan gas umum  (J/mol K)</p>
+                <p>T = suhu mutlak (K)</p>
+                <p>Mr = massa molekul relatif (kg/mol) </p>
+
+                <strong>b. Cepat rambat bunyi di dalam medium zat cair </strong>
+                <img 
+                     src="modul9.2.png"
+                     style={{width: "100px", height: "60px", margin: "5px"}}
+                />
+                <p>v = cepat rambat bunyi  (m/s) </p>
+                <p>B = modulus Bulk (N/m2) </p>
+                <p>ρ = massa jenis zat cair (kg/m3)</p>
+
+                <strong>c. Cepat rambat bunyi di dalam medium zat padat </strong>
+                <img 
+                     src="modul9.3.png"
+                     style={{width: "100px", height: "60px", margin: "5px"}}
+                />
+                <p>v = cepat rambat bunyi  (m/s) </p>
+                <p>B = modulus Young (N/m2) </p>
+                <p>ρ = massa jenis zat padat (kg/m3) </p>
+
+                <strong>2.  Dawai</strong>
+                <p>Ketika Anda memainkan gitar  di bagian 
+                   depan (dekat leher gitar), pasti bunyinya nyaring. Itu 
+                   artinya, semakin pendek jaraknya, frekuensinya 
+                   semakin tinggi (berbanding terbalik). Begitu pula 
+                   dengan massa jenis, dan luas permukaan senarnya. 
+                   Yang dimaksud dengan luas permukaan senar di sini 
+                   penampang dari senar / dawai  dan tentu kecil sekali 
+                   kan penampangnya?Artinya, semakin kecil luas 
+                   permukaannya maka frekuensinya besar.  Adapun 
+                   variabel yang berbanding lurus terhadap frekuensi 
+                   adalah gaya. </p>
+                
+                <p>Gitar merupakan alat musik yang menggunakan dawai sebagai sumber bunyinya. 
+                   Gitar dapat menghasilkan nada-nada yang berbeda dengan jalan menekan bagian 
+                   tertentu pada senar itu saat dipetik. Nada yang dihasilkan dengan pola paling sederhana 
+                   disebut nada dasar, kemudian secara berturut-turut pola gelombang yang terbentuk 
+                   menghasilkan nada atas ke 1, nada atas ke 2, nada atas ke 3  dan seterusnya.  Baca dengan 
+                   baik uraian tentang nada-nada pada dawai.</p>
+                <p>Nada Dasar </p>
+                <img 
+                     src="modul9.5.png"
+                     style={{width: "200px", height: "70px", margin: "5px"}}
+                />
+                <p>Nada Dasar terjadi apabila sepanjang dawai terbentuk 1/2 gelombang seperti 
+                   pada gambar.  </p>
+                <p>Tali dengan panjang L membentuk ½ λ </p>
+                <p>Sehingga : L = ½ λ   maka λ = 2L  </p>
+                <p>Maka frekuensi nada dasar adalah, </p>
+                <img 
+                     src="modul9.4.png"
+                     style={{width: "100px", height: "60px", margin: "5px"}}
+                />
+                <p> Nada Atas ke 1  </p>
+                <img 
+                     src="modul9.6.png"
+                     style={{width: "250px", height: "70px", margin: "5px"}}
+                />
+                <p>Nada atas ke 1 terjadi apabila sepanjang dawai terbentuk 1 gelombang. 
+                   Tali dengan panjang L membentuk 1 λ .  </p>
+                
+                <p>L = 1 λ   maka λ = L </p>
+                <p>Frekuensi nada atas ke 1 adalah,  </p>
+                <img 
+                     src="modul9.7.png"
+                     style={{width: "100px", height: "40px", margin: "5px"}}
+                />
+                <p> Nada Atas ke 2 </p>
+                <p>Nada atas ke 2 terjadi apabila sepanjang dawai terbentuk 1 ½ gelombang. 
+                   Tali dengan panjang L membentuk 1 ½  λ  atau 3/2 λ </p>
+                <p>L = 3/2 λ   maka λ = 2/3 L </p>
+                <img 
+                     src="modul9.8.png"
+                     style={{width: "220px", height: "90px", margin: "5px"}}
+                />
+                <p>Frekuensi nada atas ke 2 adalah,  </p>
+                <img 
+                     src="modul9.9.png"
+                     style={{width: "100px", height: "40px", margin: "5px"}}
+                />
+                <p>Nada Atas ke 2 </p>
+                <p>Nada atas ke 2 terjadi apabila sepanjang dawai terbentuk 1 ½ gelombang. 
+                   Tali dengan panjang L membentuk 1 ½  λ  atau 3/2 λ</p>
+                <p>L = 3/2 λ   maka λ = 2/3 L </p>
+                <p>Frekuensi nada atas ke 2 adalah,  </p>
+                <img 
+                     src="modul9.10.png"
+                     style={{width: "200px", height: "70px", margin: "5px"}}
+                />
+                <p>Frekuensi nada atas ke 2 adalah, </p>
+                <img 
+                     src="modul9.11.png"
+                     style={{width: "100px", height: "40px", margin: "5px"}}
+                />
+                <p>Berdasarkan data diatas dapat diambil kesimpulan bahwa frekuensi nada atas ke n  </p>
+                <img 
+                     src="modul9.12.png"
+                     style={{width: "100px", height: "50px", margin: "5px"}}
+                />
+                <p>Frekuensi-frekuensi dan seterusnya disebut frekuensi alami atau 
+                   frekuensi resonansi.  </p>
+                <img 
+                     src="modul9.13.png"
+                     style={{width: "200px", height: "30px", margin: "5px"}}
+                />
+                <p>Perbandingan frekuensi-ferkuensi di atas, yaitu </p>
+                <img 
+                     src="modul9.14.png"
+                     style={{width: "200px", height: "50px", margin: "5px"}}
+                />
+            </section>
+            <section className="card">
                 <h2>Konsep Dasar</h2>
                 <ul>
                     <li>
