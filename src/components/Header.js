@@ -47,15 +47,11 @@ const Navbar = () => {
                             </ul>
                         )}
                     </li>
-                    <li><a href="/kalkulator">Kalkulator</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <div className="auth-section">
-         
-                            
-                        <a href="/login" className="sign-in-link">Sign In</a>
-                        <a href="/daftar" className="cta-button">Sign Up</a>
-                   </div>
 
+                    <li><a href="#">Kontak</a></li>
+                  
+                       <li> <a href="/daftar" className="cta-button">Sign Up</a> </li>
+                
                     {/* <li>
                         {username ? (
                             <div onClick={handleLogout}>
