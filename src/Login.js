@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [berhasil, setBerhasil] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
@@ -12,11 +13,15 @@ const Login = () => {
     const storedPassword = localStorage.getItem("password");
 
     if (email === storedEmail && password === storedPassword) {
-      alert("Login berhasil!");
-      navigate("/menuhome");
+      setBerhasil("Sign in berhasil! Anda akan diarahkan ke page home..");
+    
+      setTimeout(() => {
+        navigate("/menuhome");
+      }, 3000);
     } else {
       alert("Email atau password salah!");
     }
+
     setEmail("");
     setPassword("");
   };
@@ -127,6 +132,17 @@ const Login = () => {
             >
               Sign In
             </button>
+
+            {berhasil && (
+            <p style={{
+              marginTop:"10px",
+              color:"#00FF00",
+              textAlign:"center",
+              fontWeight:"bold",
+            }}>
+              {berhasil}
+            </p>
+              )}
 
             <div className="mt-3 text-center">
                 <p>Don't Have An Account?

@@ -5,14 +5,20 @@ const Daftar = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [berhasil, setBerhasil] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    alert("Registrasi berhasil! Silahkan login.");
-    navigate("/login");
+
+    setBerhasil("Sign up berhasil! Anda akan diarahkan ke page sign in..");
+    
+    setTimeout(() => {
+      navigate("/login");
+    }, 3000);
+    
     setEmail("");
     setUsername("");
     setPassword("");
@@ -139,6 +145,17 @@ const Daftar = () => {
             >
               Sign Up
             </button>
+
+              {berhasil && (
+            <p style={{
+              marginTop:"10px",
+              color:"#00FF00",
+              textAlign:"center",
+              fontWeight:"bold",
+            }}>
+              {berhasil}
+            </p>
+              )}
 
             <div className="mt-3 text-center">
                 <p>Have An Account?
