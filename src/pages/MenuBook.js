@@ -18,7 +18,7 @@ const navigate = useNavigate();
 
 const menubookStyle = {
     display: "grid",
-    gap:"30px",
+    gap:"70px",
     justifyContent:"center",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     padding:"20px",
