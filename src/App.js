@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // Impor useState
+import React, { useState } from "react";
 import Daftar from './Daftar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
@@ -22,11 +22,11 @@ import Quiz3 from "./pages/Quiz3";
 import Quiz4 from "./pages/Quiz4";
 import Quiz5 from "./pages/Quiz5";
 import Kalkulator from "./pages/Kalkulator";
-import ContactForm from './pages/ContactForm';
+import ContactPage from './pages/ContactForm';
 
 
 const App = () => {
-  const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -38,7 +38,7 @@ const App = () => {
         <h1></h1>
         <Routes>
           <Route path="/" element={<Navigate to="/menuhome" replace />} />
-          <Route path="/daftar" element={<Daftar />} /> {/* Perbaiki eAlement menjadi element */}
+          <Route path="/daftar" element={<Daftar />} />
           <Route path="/login" element={<Login />} />
           <Route path="/menuhome" element={<MenuHome />} />
           <Route path="/modul1" element={<Modul1 />} />
@@ -54,7 +54,7 @@ const App = () => {
           <Route path="/menubook" element={<MenuBook />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/kalkulator" element={<Kalkulator />} />
-          <Route path="/contactform" element={<ContactForm />} />
+          <Route path="/contactForm" element={<ContactPage />} />
           <Route path="/quiz2" element={<Quiz2/>}/>
           <Route path="/quiz3" element={<Quiz3/>}/>
           <Route path="/quiz4" element={<Quiz4/>}/>
