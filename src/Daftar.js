@@ -54,8 +54,8 @@ const Daftar = () => {
             justifyContent: "center",
           }}
         >
-          <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
-            Selamat Datang!
+          <h2 style={{ fontSize: "25px", fontWeight: "700", marginBottom: "15px" }}>
+            Welcome To PhysicsUnveiled!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
             Yuk daftar untuk belajar bersama kami dengan mudah!
