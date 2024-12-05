@@ -50,7 +50,7 @@ const Navbar = () => {
 
                     <li><a href="/ContactForm">Kontak</a></li>
                   
-                       <li> <a href="/daftar" className="cta-button">Sign Up</a> </li>
+                       {/* <li> <a href="/daftar" className="cta-button">Sign Up</a> </li> */}
                 
                     {/* <li>
                         {username ? (
