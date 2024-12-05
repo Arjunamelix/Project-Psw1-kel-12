@@ -15,6 +15,8 @@ const Login = () => {
     if (email === storedEmail && password === storedPassword) {
       setBerhasil("Sign in berhasil! Anda akan diarahkan ke homepage..");
     
+      localStorage.setItem("currentUser", email);
+      
       setTimeout(() => {
         navigate("/menuhome");
       }, 3000);
@@ -60,13 +62,14 @@ const Login = () => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            textAlign:"center"
           }}
         >
-          <h2 style={{ fontSize: "28px", fontWeight: "700", marginBottom: "15px" }}>
+          <h2 style={{ fontSize: "25px", fontWeight: "700", marginBottom: "15px" }}>
             Welcome Back Again!
           </h2>
           <p style={{ fontSize: "18px", textAlign: "center" }}>
-            Silakan login untuk melanjutkan belajar bersama kami.
+            You Should Sign in to Access This Website
           </p>
         </div>
         <div
@@ -100,7 +103,7 @@ const Login = () => {
                 borderRadius: "8px",
                 border: "1px solid #394867",
                 backgroundColor: "#273A50",
-                color: "#FFD700",
+                color: "#fff",
               }}
             />
             <input
@@ -115,7 +118,7 @@ const Login = () => {
                 borderRadius: "8px",
                 border: "1px solid #394867",
                 backgroundColor: "#273A50",
-                color: "#FFD700",
+                color: "#fff",
               }}
             />
             <button
@@ -125,7 +128,7 @@ const Login = () => {
                 fontSize: "18px",
                 borderRadius: "8px",
                 border: "none",
-                backgroundColor: "#FFD700",
+                backgroundColor: "#1a73e8",
                 color: "#0D1B2A",
                 cursor: "pointer",
               }}
