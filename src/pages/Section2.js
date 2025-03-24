@@ -8,7 +8,7 @@ const Section2 = () => {
                 padding: "80px 0",
                 backgroundColor: "#f7f7f7",
                 textAlign: "center",
-                height: "100vh",
+                height: "auto",
             }}
         >
             <Container>
@@ -46,20 +46,7 @@ const Section2 = () => {
                                     </Card.Body>
                                 </Card>
                             </Col>
-                        </Row>
-
-                        <Button
-                            variant="primary"
-                            size="lg"
-                            style={{
-                                padding: "12px 30px",
-                                fontSize: "1.2rem",
-                                borderRadius: "30px",
-                                marginTop: "30px",
-                            }}
-                        >
-                            Mulai Belajar Sekarang
-                        </Button>
+                        </Row>       
                     </Col>
                 </Row>
             </Container>

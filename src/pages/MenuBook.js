@@ -18,7 +18,7 @@ const navigate = useNavigate();
 
 const menubookStyle = {
     display: "grid",
-    gap:"30px",
+    gap:"70px",
     justifyContent:"center",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     padding:"20px",
@@ -27,7 +27,7 @@ const menubookStyle = {
     boxShadow:"0 8px 20px rgba(0, 0, 0, 0.2)",
     animation:"fadeIn 1s ease-in-out",
     minHeight: "100vh",
-    background: "url('bgmenubook.png') no-repeat center center/cover",
+    background: "url('backgroundbook.jpg') no-repeat center center/cover",
 };
 
 const cardstyle = {

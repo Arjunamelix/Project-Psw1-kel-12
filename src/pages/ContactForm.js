@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
+import Navbar from '../components/Header';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +30,7 @@ const ContactPage = () => {
   };
 
   return (
+    <div><Navbar />
     <div className="contact-page">
       <div className="form-section">
         <h2 className="form-heading">Send a Message</h2>
@@ -89,6 +91,7 @@ const ContactPage = () => {
           ))
         )}
       </div>
+    </div>
     </div>
   );
 };

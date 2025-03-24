@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // Impor useState
+import React, { useState } from "react";
 import Daftar from './Daftar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
@@ -17,14 +17,15 @@ import Modul9 from './pages/Modul9';
 import Modul10 from "./pages/Modul10";
 import MenuBook from "./pages/MenuBook";
 import Quiz from "./pages/Quiz";
-import Kalkulator from "./pages/Kalkulator";
 import Quiz2 from "./pages/Quiz2";
 import Quiz3 from "./pages/Quiz3";
 import Quiz4 from "./pages/Quiz4";
 import Quiz5 from "./pages/Quiz5";
+import Kalkulator from "./pages/Kalkulator";
+import ContactPage from './pages/ContactForm';
 
 const App = () => {
-  const [searchQuery, setSearchQuery] = useState(""); // Menggunakan useState dengan benar
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -35,10 +36,18 @@ const App = () => {
       <div>
         <h1></h1>
         <Routes>
-          <Route path="/" element={<Navigate to="/menuhome" replace />} />
+          {/* Redirect from root to daftar */}
+          <Route path="/" element={<Navigate to="/daftar" replace />} />
+
+          {/* Daftar and Login Routes */}
           <Route path="/daftar" element={<Daftar />} />
           <Route path="/login" element={<Login />} />
+
+          {/* Menu Routes */}
           <Route path="/menuhome" element={<MenuHome />} />
+          <Route path="/menubook" element={<MenuBook />} />
+
+          {/* Modul Routes */}
           <Route path="/modul1" element={<Modul1 />} />
           <Route path="/modul2" element={<Modul2 />} />
           <Route path="/modul3" element={<Modul3 />} />
@@ -49,13 +58,19 @@ const App = () => {
           <Route path="/modul8" element={<Modul8 />} />
           <Route path="/modul9" element={<Modul9 />} />
           <Route path="/modul10" element={<Modul10 />} />
-          <Route path="/menubook" element={<MenuBook />} />
+
+          {/* Quiz Routes */}
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/quiz2" element={<Quiz2 />} />
           <Route path="/quiz3" element={<Quiz3 />} />
           <Route path="/quiz4" element={<Quiz4 />} />
           <Route path="/quiz5" element={<Quiz5 />} />
+
+          {/* Kalkulator Route */}
           <Route path="/kalkulator" element={<Kalkulator />} />
+
+          {/* Contact Page */}
+          <Route path="/contactForm" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>
