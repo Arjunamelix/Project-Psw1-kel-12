@@ -96,7 +96,7 @@ const Modul1 = () => {
 
                     ul li {
                         margin-bottom: 10px;
-                        color: #333;
+                        color: #333;f
                     }
 
                     table {
